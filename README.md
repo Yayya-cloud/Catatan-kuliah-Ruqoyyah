@@ -1,1 +1,0 @@
-# Catatan-kuliah-Ruqoyyah
