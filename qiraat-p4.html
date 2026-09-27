@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أساسيات علم القراءات - Pertemuan 4</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --dark-green: #1b4332;
+            --medium-green: #2d6a4f;
+            --accent-green: #52b788;
+            --soft-pastel-green: #d8f3dc;
+            --light-bg: #f4f9f5;
+            --card-bg: #ffffff;
+            --text-dark: #2d312e;
+            --text-muted: #525b56;
+            --highlight-bg: #e8f5e9;
+            --indo-box-bg: #f0fdf4;
+            --indo-border: #86efac;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Tajawal', 'Amiri', sans-serif;
+            background-color: var(--light-bg);
+            color: var(--text-dark);
+            line-height: 1.8;
+            padding: 20px 10px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Header Banner */
+        .main-header {
+            background: linear-gradient(135deg, var(--dark-green), var(--medium-green));
+            color: white;
+            padding: 30px 20px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(27, 67, 50, 0.15);
+            margin-bottom: 25px;
+        }
+
+        .main-header h1 {
+            font-family: 'Amiri', serif;
+            font-size: 28px;
+            margin-bottom: 8px;
+            color: var(--soft-pastel-green);
+        }
+
+        .main-header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        /* Card Section */
+        .card {
+            background: var(--card-bg);
+            border-radius: 14px;
+            padding: 25px;
+            margin-bottom: 25px;
+            border: 1px solid var(--soft-pastel-green);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+        }
+
+        .lesson-title {
+            background-color: var(--soft-pastel-green);
+            color: var(--dark-green);
+            padding: 10px 18px;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 20px;
+            border-right: 5px solid var(--dark-green);
+        }
+
+        .elements-box {
+            background-color: var(--highlight-bg);
+            border: 1px dashed var(--accent-green);
+            border-radius: 10px;
+            padding: 18px 22px;
+            margin-bottom: 20px;
+        }
+
+        .elements-box h3 {
+            color: var(--dark-green);
+            font-size: 17px;
+            margin-bottom: 10px;
+        }
+
+        .elements-box ul {
+            list-style-type: none;
+            padding-right: 10px;
+        }
+
+        .elements-box li {
+            position: relative;
+            padding-right: 20px;
+            margin-bottom: 6px;
+            color: var(--medium-green);
+            font-weight: 500;
+        }
+
+        .elements-box li::before {
+            content: "•";
+            color: var(--accent-green);
+            font-size: 20px;
+            position: absolute;
+            right: 0;
+            top: -2px;
+        }
+
+        /* Content Styling */
+        .section-header {
+            color: var(--dark-green);
+            font-size: 20px;
+            font-weight: bold;
+            margin: 20px 0 12px 0;
+            padding-bottom: 6px;
+            border-bottom: 2px solid var(--soft-pastel-green);
+        }
+
+        .definition-item {
+            margin-bottom: 15px;
+        }
+
+        .def-title {
+            font-weight: bold;
+            color: var(--medium-green);
+            display: inline-block;
+        }
+
+        .numbered-list {
+            padding-right: 20px;
+            margin: 12px 0;
+        }
+
+        .numbered-list li {
+            margin-bottom: 8px;
+        }
+
+        .quran-example {
+            font-family: 'Amiri', serif;
+            background-color: #f9fbf9;
+            border-right: 4px solid var(--accent-green);
+            padding: 12px 18px;
+            margin: 12px 0;
+            border-radius: 4px 8px 8px 4px;
+            font-size: 19px;
+            color: var(--dark-green);
+        }
+
+        .opinion-card {
+            background-color: #fafdfa;
+            border: 1px solid var(--soft-pastel-green);
+            border-radius: 10px;
+            padding: 15px 18px;
+            margin-bottom: 12px;
+        }
+
+        .opinion-title {
+            font-weight: bold;
+            color: var(--dark-green);
+            margin-bottom: 6px;
+        }
+
+        /* Indonesian Summary Box (LTR) */
+        .summary-box-id {
+            direction: ltr;
+            text-align: left;
+            font-family: 'Poppins', 'Tajawal', sans-serif;
+            background-color: var(--indo-box-bg);
+            border: 1.5px solid var(--indo-border);
+            border-left: 6px solid var(--medium-green);
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 30px;
+            box-shadow: 0 2px 8px rgba(45, 106, 79, 0.05);
+        }
+
+        .summary-box-id h4 {
+            color: var(--dark-green);
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .summary-box-id ul {
+            padding-left: 20px;
+            margin-top: 8px;
+        }
+
+        .summary-box-id li {
+            font-size: 14px;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+
+        .summary-box-id strong {
+            color: var(--medium-green);
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            body { padding: 12px 6px; }
+            .card { padding: 18px 14px; }
+            .main-header h1 { font-size: 22px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- Header Utama -->
+        <header class="main-header">
+            <h1>الحقيبة القرآنية: أساسيات علم القراءات</h1>
+            <p>المادة IV: القراءات الشاذة وحكم العمل بها</p>
+        </header>
+
+        <!-- ================= BAGIAN 1: LESSON 5 ================= -->
+        <div class="card">
+            <div class="lesson-title">الدرس الخامس: مفهوم القراءات الشاذة</div>
+
+            <!-- Elements Box -->
+            <div class="elements-box">
+                <h3>عناصر الدرس: يتكون هذا الدرس من ثلاثة عناصر:</h3>
+                <ul>
+                    <li>الأول: تعريف القراءات الشاذة</li>
+                    <li>الثاني: أشهر رواة القراءات الشاذة</li>
+                    <li>الثالث: أمثلة لبعض القراءات الشاذة</li>
+                </ul>
+            </div>
+
+            <!-- العنصر الأول -->
+            <h2 class="section-header">العنصر الأول: تعريف القراءات الشاذة</h2>
+            
+            <div class="definition-item">
+                <p><span class="def-title">تعريف الشاذ لغةً:</span> من الشذوذ بمعنى: الانفراد، شذ يشذ شذوذاً، يقال شذ الرجل: إذا انفرد عن أصحابه اعتزل منهم، وكل شيء منفرد فهو شاذ.</p>
+            </div>
+
+            <div class="definition-item">
+                <p><span class="def-title">واصطلاحاً:</span> "كل قراءة فقدت أحد الأركان الثلاثة لقبولها" بحيث إنها:</p>
+                <ol class="numbered-list">
+                    <li>لم تكن متواترة.</li>
+                    <li>أو خالفت رسم المصاحف العثمانية كلها.</li>
+                    <li>أو لم يكن لها أصل في اللغة العربية، فهي شاذة.</li>
+                </ol>
+            </div>
+
+            <p><strong>وقيل الشاذ:</strong> <span style="background-color: #e8f5e9; padding: 2px 6px; border-radius: 4px;">ما ليس بمتواتر.</span> فكأن القراءة التي لم تصل إلى درجة التواتر هي شاذة؛ لأن الأصل في قبول أي قراءة هو وصولها إلى درجة التواتر.</p>
+            <p style="margin-top: 12px; color: var(--text-muted); font-size: 14px; line-height: 1.6;">أما الشرطان الأخيران فلا يستغنى بهما؛ لأنه لا توجد قراءة متواترة مخالفة للشرطين الأخيرين أو أحدهما، أما القراءة غير المتواترة فقد تكون مخالفة للشرط الثاني أو تكون مخالفة للشرط الثالث، وهذا هو حال جميع القراءات الشاذة.</p>
+            <p style="margin-top: 10px; color: var(--text-muted); font-size: 14px; line-height: 1.6;">ولا توجد قراءة متواترة لم يقرأ بها أحد القراء العشرة المشهورين، فعلى هذا لنا أن نقول: إن القراءات الشاذة هي ما وراء القراءات العشر المتواترة المتداولة والمروية عن القراء العشرة المعروفين.</p>
+
+            <br>
+            <!-- العنصر الثاني -->
+            <h2 class="section-header">العنصر الثاني: أشهر رواة القراءات الشاذة</h2>
+            <p>القراءات الشاذة كثيرة لا حصر لها، وكذلك رواتها، حتى روي بعض الشواذ عن بعض رواة المتواترة.</p>
+            
+            <br>
+            <p><strong>ورواة القراءات الشاذة قسمان:</strong></p>
+            
+            <div style="margin-top: 10px;">
+                <p style="font-weight: bold; color: var(--medium-green);">أ- الرواة الأربعة بعد العشرة؛ وهم:</p>
+                <ol class="numbered-list">
+                    <li>الحسن البصري (ت ١١٠ هـ)</li>
+                    <li>محمد بن عبد الرحمن بن محيصن (ت ١٢٣ هـ)</li>
+                    <li>يحيى بن المبارك اليزيدي البغدادي (ت ٢٠٢ هـ)</li>
+                    <li>سليمان بن مهران الأسدي الأعمش (ت ١٤٨ هـ)</li>
+                </ol>
+                <p style="font-size: 14px; color: var(--text-muted); line-height: 1.6;">وقد أجمع العلماء على الحكم بالشذوذ على القراءات التي انفرد بنقلها أحد هؤلاء الأئمة الأربعة أو راو من رواتهم؛ وذلك لعدم تواترها؛ بل لعدم وصولها إلى درجة الشهرة والاستفاضة لاضطراب النقلة في ضبط بعض ألفاظها، ولأن بعضها مخالف لرسم المصاحف العثمانية وبعضها مخالف للغة العرب.</p>
+            </div>
+
+            <br>
+            <div>
+                <p style="font-weight: bold; color: var(--medium-green);">ب- رواة الشواذ عموماً، وهم كثيرون، منهم كبار الصحابة والتابعين:</p>
+                <ol class="numbered-list">
+                    <li>ابن مسعود رضي الله عنه (ت ٣٢ هـ)</li>
+                    <li>ابن الزبير رضي الله عنه (ت ٧٣ هـ)</li>
+                    <li>مسروق بن الأجدع الكوفي (ت ٦٣ هـ)</li>
+                    <li>نصر بن عاصم الليثي البصري (ت ٨٩ هـ)</li>
+                </ol>
+            </div>
+
+            <br>
+            <!-- العنصر الثالث -->
+            <h2 class="section-header">العنصر الثالث: أمثلة لبعض القراءات الشاذة</h2>
+            
+            <div class="quran-example">
+                <strong>١- {فَإِمَّا يَأْتِيَنَّكُمْ رُسُلٌ مِّنْكُمْ}:</strong> قرأ أُبي بن كعب "تَأْتِيَنَّكُمْ" بتاء التأنيث؛ لأن الفاعل "رسل" جمع تكسير يجوز في فعله التذكير والتأنيث، وهي غير متواترة.
+            </div>
+
+            <div class="quran-example">
+                <strong>٢- {فَاسْعَوْا إِلَىٰ ذِكْرِ اللَّهِ}:</strong> قرأ مسروق بن الأجدع عن ابن مسعود: "فَامْضُوا"، وهي مخالفة للرسم العثماني، ولعلها مدرجة وتفسيراً للقراءة المتواترة.
+            </div>
+
+            <div class="quran-example">
+                <strong>٣- {وَمَا خَلَقَ الذَّكَرَ وَالأُنثَىٰ}:</strong> رُوي عن ابن مسعود -رضي الله عنه- أنه قرأ: "وَالذَّكَرِ وَالأُنثَى".
+            </div>
+
+            <!-- KESIMPULAN DARS 5 (INDONESIA) -->
+            <div class="summary-box-id">
+                <h4>📌 Rangkuman Ringkas Pelajaran 5 (Konsep Qira'at Syaadzah)</h4>
+                <ul>
+                    <li><strong>Pengertian:</strong> Secara bahasa berarti <em>menyendiri/terpisah</em>. Secara istilah, Qira'at Syaadzah adalah bacaan yang gugur salah satu syarat dari 3 rukun penerimaan qira'at (yaitu: tidak mutawatir, menyalahي Rasm Usmani, atau tidak punya dasar tata bahasa Arab). Singkatnya: <em>Setiap bacaan di luar Qira'at 10 Mutawatir.</em></li>
+                    <li><strong>Perawi Terkenal:</strong> Terbagi 2 kelompok, yaitu <strong>4 Imam setelah Qira'at 10</strong> (Al-Hasan Al-Bashri, Ibn Muhaishin, Al-Yazidi, Al-A'masy) dan <strong>Perawi Umum</strong> dari Sahabat & Tabi'in (Ibn Mas'ud, Ibn Az-Zubair, Masruq, Nashr bin 'Ashim).</li>
+                    <li><strong>Contoh:</strong> Bacaan Ibn Mas'ud membaca <em>"Famdhuu"</em> menggantikan <em>"Fas'au"</em> pada Surah Al-Jumu'ah (karena menyalahi Rasm Usmani dan kemungkinan penafsiran dari beliau).</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- ================= BAGIAN 2: LESSON 6 ================= -->
+        <div class="card">
+            <div class="lesson-title">الدرس السادس: حكم العمل بالقراءات الشاذة</div>
+
+            <!-- Elements Box -->
+            <div class="elements-box">
+                <h3>عناصر الدرس: يتكون هذا الدرس من عنصرين:</h3>
+                <ul>
+                    <li>الأول: حكم القراءة بالشاذ</li>
+                    <li>الثاني: حكم العمل أو الاستشهاد بالقراءات الشاذة</li>
+                </ul>
+            </div>
+
+            <!-- العنصر الأول -->
+            <h2 class="section-header">العنصر الأول: حكم القراءة بالشاذ</h2>
+            <p style="margin-bottom: 12px;"><strong>اختلف العلماء في هذه المسألة على ثلاثة أقوال:</strong></p>
+
+            <div class="opinion-card">
+                <div class="opinion-title">القول الأول: جواز القراءة بالشاذ</div>
+                <p>لأن الصحابة كانوا يقرءون بها في الصلاة وخارجها، فلو لم تجز القراءة بها لكان أولئك لم يصلوا قط؛ بل ارتكبوا محرماً، ومرتكب الحرام يسقط الاحتجاج بخبره، وهم نقلة الشريعة فيسقط بذلك أساس الإسلام، والعياذ بالله.</p>
+                <p style="font-size: 13px; color: var(--text-muted); margin-top: 5px;">* وهذا أحد القولين لأصحاب الشافعي وأبي حنيفة وإحدى الروايتين عن مالك وأحمد.</p>
+            </div>
+
+            <div class="opinion-card">
+                <div class="opinion-title">القول الثاني: عدم جواز القراءة بالشاذ (قول الجمهور)</div>
+                <p>للجمهور يقولون بعدم جواز القراءة بالشاذ؛ للتعبد بها مطلقا، لا في الصلاة ولا خارجها؛ بل نقل البعض إجماع المسلمين على ذلك - كابن عبد البر وغيره- بحجة أن الشواذ لم تثبت بالتواتر، فلا يحكم قرآنيتها؛ لأن القرآن لا يثبت إلا بالتواتر، وإن ثبتت بالنقل فإنها منسوخة بالعرضة الأخيرة أو بإجماع الصحابة على المصحف العثماني.</p>
+                <p style="font-size: 13px; color: var(--text-muted); margin-top: 5px;">* وقد اتفق فقهاء بغداد على استتابة من قرأ بالشواذ، وقصة كل واحد من ابن شنبوذ ابن مقسم العطار معروفة في ذلك.</p>
+            </div>
+
+            <div class="opinion-card">
+                <div class="opinion-title">القول الثالث: التفصيل في الصلاة</div>
+                <p>إن قرأ بها في القراءة الواجبة في الصلاة -وهي الفاتحة- عند القدرة على غيرها لم تصح صلاته؛ لأنه لم يتيقن أنه أدى الواجب من القراءة؛ لعدم ثبوت القرآن بذلك، وإن قرأ بها فيما لا يجب لم تبطل؛ لأنه لم يتيقن أنه أتى في الصلاة بمبطل؛ لجواز أن يكون ذلك من الحروف التي أُنزل عليها القرآن.</p>
+            </div>
+
+            <br>
+            <!-- العنصر الثاني -->
+            <h2 class="section-header">العنصر الثاني: حكم العمل أو الاستشهاد بالقراءات الشاذة</h2>
+            <p style="margin-bottom: 12px;"><strong>اختلف على قولين:</strong></p>
+
+            <div class="opinion-card">
+                <div class="opinion-title">القول الأول: جواز العمل بها تنزيلاً لها منزلة أخبار الآحاد</div>
+                <p>وهو قول الجمهور، وأخبار الآحاد مقبولة عند العلماء، يجوز العمل بها واستنباط الأحكام الشرعية منها، وقد احتج العلماء بها في كثير من الأحكام الفقهية، كما في قطع يمين السارق على قراءة ابن مسعود رضي الله عنه: <span class="quran-example" style="font-size:16px; padding: 2px 8px;">"وَالسَّارِقُ وَالسَّارِقَةُ فَاقْطَعُوا أَيْمَانَهُمَا"</span> بدل "أَيْدِيَهُمَا".</p>
+                <p style="margin-top: 8px;">واحتجت الحنفية على وجوب التتابع في صوم كفارة اليمين بقراءة ابن مسعود رضي الله عنه: <span class="quran-example" style="font-size:16px; padding: 2px 8px;">"فَصِيَامُ ثَلاَثَةِ أَيَّامٍ مُتَتَابِعَاتٍ"</span> بزيادة كلمة "متتابعات".</p>
+            </div>
+
+            <div class="opinion-card">
+                <div class="opinion-title">القول الثاني: لا يجوز العمل به</div>
+                <p>بحجة أن القراءات الشاذة لم تثبت قرآنيتها، وهو قول جمهور الشافعية.</p>
+                <p style="font-size: 14px; color: var(--text-muted); margin-top: 6px;">وأجاب الجمهور عن ذلك بأنه لا يلزم من انتفاء قرآنيتها انتفاء كونها أخباراً؛ أي: أنها في حكم العمل بخبر الواحد، وخبر الواحد يعمل به.</p>
+            </div>
+
+            <div style="background-color: var(--soft-pastel-green); padding: 15px; border-radius: 8px; margin-top: 15px; color: var(--dark-green); font-size: 14.5px;">
+                <strong>💡 خلاصة الاستشهاد:</strong> ويجوز الاستشهاد بالقراءات الشاذة في القواعد النحوية والصرفية باتفاق العلماء، ويجوز كذلك تعلمها وتعليمها نظرياً لا عملياً، ويجوز تدوينها في الكتب وبيان وجوهها من حيث اللغة والإعراب.
+            </div>
+
+            <!-- KESIMPULAN DARS 6 (INDONESIA) -->
+            <div class="summary-box-id">
+                <h4>📌 Rangkuman Ringkas Pelajaran 6 (Hukum Menggunakan Qira'at Syaadzah)</h4>
+                <ul>
+                    <li><strong>1. Hukum Membacanya (التعبد بالقراءة):</strong>
+                        <br>• <em>Pendapat Boleh:</em> Sebagian sahabat/ulama membolehkan.
+                        <br>• <em>Pendapat Jumhur (Mayoritas):</em> <strong>TIDAK BOLEH</strong> dibaca dalam/luar shalat karena statusnya tidak mutawatir sebagai Al-Qur'an.
+                        <br>• <em>Pendapat Rinci:</em> Jika dibaca pada Surah Al-Fatihah shalatnya tidak sah, tapi jika pada surah/bacaan sunnah tidak membatalkan shalat.
+                    </li>
+                    <li><strong>2. Hukum Pengambilan Hukum Fiqih (العمل بها):</strong>
+                        <br>• <em>Jumhur Ulama:</em> <strong>BOLEH</strong> dijadikan dasar hukum fiqih karena dikategorikan sama seperti <em>Hadits Ahad</em> (Contoh: Potong tangan kanan pencuri dan puasa kafarat 3 hari berturut-turut).
+                        <br>• <em>Jumhur Syafi'iyah:</em> Tidak boleh karena status kemukjizatan Al-Qur'annya tidak terbukti.
+                    </li>
+                    <li><strong>3. Kebolehan Umum:</strong> Para ulama sepakat Qira'at Syaadzah boleh dijadikan hujjah/dalil tata bahasa Arab (Nahwu & Shorof), dipelajari secara teori, dan ditulis dalam buku-buku tafsir/ilmu Al-Qur'an.</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
