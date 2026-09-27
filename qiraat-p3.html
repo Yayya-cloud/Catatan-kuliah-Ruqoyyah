@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أساسيات علم القراءات - Pertemuan 3</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --dark-green: #1b4332;
+            --medium-green: #2d6a4f;
+            --accent-green: #52b788;
+            --soft-pastel-green: #d8f3dc;
+            --light-bg: #f4f9f5;
+            --card-bg: #ffffff;
+            --text-dark: #2d312e;
+            --text-muted: #525b56;
+            --highlight-bg: #e8f5e9;
+            --indo-box-bg: #f0fdf4;
+            --indo-border: #86efac;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Tajawal', 'Amiri', sans-serif;
+            background-color: var(--light-bg);
+            color: var(--text-dark);
+            line-height: 1.8;
+            padding: 20px 10px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin-bottom: 18px;
+            color: var(--medium-green);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+            direction: ltr;
+        }
+
+        /* Header Banner */
+        .main-header {
+            background: linear-gradient(135deg, var(--dark-green), var(--medium-green));
+            color: white;
+            padding: 30px 20px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(27, 67, 50, 0.15);
+            margin-bottom: 25px;
+        }
+
+        .main-header h1 {
+            font-family: 'Amiri', serif;
+            font-size: 28px;
+            margin-bottom: 8px;
+            color: var(--soft-pastel-green);
+        }
+
+        .main-header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        /* Card Section */
+        .card {
+            background: var(--card-bg);
+            border-radius: 14px;
+            padding: 25px;
+            margin-bottom: 25px;
+            border: 1px solid var(--soft-pastel-green);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+        }
+
+        .lesson-title {
+            background-color: var(--soft-pastel-green);
+            color: var(--dark-green);
+            padding: 10px 18px;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 20px;
+            border-right: 5px solid var(--dark-green);
+        }
+
+        .elements-box {
+            background-color: var(--highlight-bg);
+            border: 1px dashed var(--accent-green);
+            border-radius: 10px;
+            padding: 18px 22px;
+            margin-bottom: 20px;
+        }
+
+        .elements-box h3 {
+            color: var(--dark-green);
+            font-size: 17px;
+            margin-bottom: 10px;
+        }
+
+        .elements-box ul {
+            list-style-type: none;
+            padding-right: 10px;
+        }
+
+        .elements-box li {
+            position: relative;
+            padding-right: 20px;
+            margin-bottom: 6px;
+            color: var(--medium-green);
+            font-weight: 500;
+        }
+
+        .elements-box li::before {
+            content: "•";
+            color: var(--accent-green);
+            font-size: 20px;
+            position: absolute;
+            right: 0;
+            top: -2px;
+        }
+
+        /* Content Styling */
+        .section-header {
+            color: var(--dark-green);
+            font-size: 20px;
+            font-weight: bold;
+            margin: 20px 0 12px 0;
+            padding-bottom: 6px;
+            border-bottom: 2px solid var(--soft-pastel-green);
+        }
+
+        .definition-item {
+            margin-bottom: 15px;
+        }
+
+        .def-title {
+            font-weight: bold;
+            color: var(--medium-green);
+            display: inline-block;
+        }
+
+        .numbered-list, .bullet-list {
+            padding-right: 20px;
+            margin: 12px 0;
+        }
+
+        .numbered-list li, .bullet-list li {
+            margin-bottom: 8px;
+        }
+
+        .quote-box {
+            font-family: 'Amiri', serif;
+            background-color: #f9fbf9;
+            border-right: 4px solid var(--accent-green);
+            padding: 12px 18px;
+            margin: 12px 0;
+            border-radius: 4px 8px 8px 4px;
+            font-size: 18px;
+            color: var(--dark-green);
+        }
+
+        .opinion-card {
+            background-color: #fafdfa;
+            border: 1px solid var(--soft-pastel-green);
+            border-radius: 10px;
+            padding: 15px 18px;
+            margin-bottom: 12px;
+        }
+
+        .opinion-title {
+            font-weight: bold;
+            color: var(--dark-green);
+            margin-bottom: 6px;
+        }
+
+        /* Indonesian Summary Box (LTR) */
+        .summary-box-id {
+            direction: ltr;
+            text-align: left;
+            font-family: 'Poppins', 'Tajawal', sans-serif;
+            background-color: var(--indo-box-bg);
+            border: 1.5px solid var(--indo-border);
+            border-left: 6px solid var(--medium-green);
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 30px;
+            box-shadow: 0 2px 8px rgba(45, 106, 79, 0.05);
+        }
+
+        .summary-box-id h4 {
+            color: var(--dark-green);
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .summary-box-id ul {
+            padding-left: 20px;
+            margin-top: 8px;
+        }
+
+        .summary-box-id li {
+            font-size: 14px;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+
+        .summary-box-id strong {
+            color: var(--medium-green);
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            body { padding: 12px 6px; }
+            .card { padding: 18px 14px; }
+            .main-header h1 { font-size: 22px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Tombol Kembali -->
+        <a href="sem3.html" class="btn-back">← Kembali ke Daftar Matkul</a>
+        
+        <!-- Header Utama -->
+        <header class="main-header">
+            <h1>الحقيبة القرآنية: أساسيات علم القراءات</h1>
+            <p>المادة III: مصطلحات علم القراءات وأركان القراءة الصحيحة</p>
+        </header>
+
+        <!-- ================= BAGIAN 1: LESSON 3 ================= -->
+        <div class="card">
+            <div class="lesson-title">الدرس الثالث: مصطلحات علم القراءات</div>
+
+            <!-- Elements Box -->
+            <div class="elements-box">
+                <h3>عناصر الدرس: يتكون هذا الدرس من ست مصطلحات:</h3>
+                <ul>
+                    <li>الأول: القراءة</li>
+                    <li>الثاني: الرواية</li>
+                    <li>الثالث: الطريق</li>
+                    <li>الرابع: الوجه</li>
+                    <li>الخامس: الأصول</li>
+                    <li>السادس: الفرش</li>
+                </ul>
+            </div>
+
+            <!-- المصطلح الأول -->
+            <h2 class="section-header">المصطلح الأول: القراءة</h2>
+            <p><strong>كل خلاف نُسب إلى إمام من أئمة القراءات مما أجمع عليه الرواة عنه.</strong></p>
+            <p style="margin-top: 8px;">نحو قوله تعالى: <span class="quote-box" style="font-size: 16px; padding: 2px 8px;">{مَالِكِ يَوْمِ الدِّينِ}</span>، فكلمة "مَالِكِ" تُقرأ بحذف الألف، وهي قراءة أبي جعفر ونافع وابن كثير وأبي عمرو وابن عامر وحمزة.</p>
+            <p style="margin-top: 8px;">وتُقرأ بإثبات الألف <span class="quote-box" style="font-size: 16px; padding: 2px 8px;">"مَالِكِ"</span> وهي قراءة عاصم والكسائي ويعقوب وخلف العاشر. وما دام رواة هؤلاء الأئمة المذكورين لم يختلفوا مع بعضهم في نقل قراءة هذه الكلمة؛ فلأجل ذلك نُسبت القراءة إلى شيخ كل واحد منهم، وعُبِّر عن الخلاف المذكور بكلمة "قراءة" فقيل: قراءة الإمام نافع، وقراءة الإمام عاصم... وهكذا.</p>
+
+            <br>
+            <!-- المصطلح الثاني -->
+            <h2 class="section-header">المصطلح الثاني: الرواية</h2>
+            <p><strong>كل خلاف نُسب إلى الأخذ عن إمام من أئمة القراءة ولو بواسطة.</strong></p>
+            <p style="margin-top: 8px;">نحو: رواية الدوري عن أبي عمرو بواسطة يحيى اليزيدي؛ لأن الدوري تلميذ يحيى، ولم يأخذ القراءة عن أبي عمرو مباشرة، ويحيى تلميذ أبي عمرو؛ ولكن الدوري اشتهر برواية أبي عمرو.</p>
+            <p style="margin-top: 8px;">ونحو: رواية هشام عن ابن عامر، ورواية حفص عن عاصم "بدون واسطة"؛ لأن كل واحد منهما تتلمذ على شيخه وأخذ القراءة عنه مباشرة.</p>
+
+            <br>
+            <!-- المصطلح الثالث -->
+            <h2 class="section-header">المصطلح الثالث: الطريق</h2>
+            <p><strong>كل خلاف نُسب إلى الأخذ عن الراوي وإن سفل.</strong></p>
+            <p style="margin-top: 8px;">نحو: طريق الأصبهاني لرواية الإمام ورش، وطريق عبيد بن الصباح لرواية الإمام حفص.</p>
+            <p style="margin-top: 8px; font-size: 14px; color: var(--text-muted);">وهذا هو الخلاف الواجب، وهو عين القراءات والروايات والطرق؛ بمعنى أن القارئ ملزم بالإتيان بجميعها، فلو أخل بشيء منها عُدَّ ذلك نقصاً في روايته.</p>
+
+            <br>
+            <!-- المصطلح الرابع -->
+            <h2 class="section-header">المصطلح الرابع: الوجه</h2>
+            <p><strong>هو ما يكون من قبيل الخلاف الجائز والمباح.</strong></p>
+            <p style="margin-top: 8px;">كأوجه قراءة البسملة بين السورتين بالوصل أو الفصل، فمن قرأ بإثبات البسملة بين السورتين فله أن يقراً بأحد الأوجه الآتية، وهي:</p>
+            <ol class="numbered-list">
+                <li>وصل الكل.</li>
+                <li>فصل الكل.</li>
+                <li>وصل الثاني بالثالث.</li>
+                <li>وصل الأول بالثاني (وهو ممنوع).</li>
+            </ol>
+            <p style="margin-top: 8px; font-size: 14px; color: var(--text-muted);">والأوجه الاختيارية لا يقال لها: قراءات، ولا روايات، ولا طرق؛ بل يقال لها: أوجه دراية فقط، والقارئ مخير في الإتيان بأي وجه منها، وغير ملزم بالإتيان بها كلها، فلو أتى بوجه واحد منها أجزأه، كما سبق.</p>
+
+            <br>
+            <!-- المصطلح الخامس -->
+            <h2 class="section-header">المصطلح الخامس: الأصول</h2>
+            <p><strong>تطلق على الأحكام الكلية والخلافات المطردة التي تندرج تحتها الجزئيات المتماثلة.</strong></p>
+            <ul class="bullet-list">
+                <li>صلة هاء الضمير.</li>
+                <li>صلة ميم الجمع.</li>
+                <li>المدود.</li>
+                <li>تسهيل الهمزات أو تغييرها.</li>
+                <li>نقل حركة الهمزة إلى الساكن الصحيح قبلها ثم حذفها.</li>
+                <li>الفتح والإمالة... وما إلى ذلك.</li>
+            </ul>
+            <p style="font-size: 14px; color: var(--text-muted); margin-top: 5px;">والأصول الدائرة على اختلاف القراءات سبعة وثلاثون أصلاً.</p>
+
+            <br>
+            <!-- المصطلح السادس -->
+            <h2 class="section-header">المصطلح السادس: الفرش</h2>
+            <p><strong>ما كان من خلاف غير مطرد في حروف القراءات مع عزو كل قراءة إلى صاحبها.</strong></p>
+            <p style="margin-top: 8px;">كالخلاف في قراءة: <span class="quote-box" style="font-size: 16px; padding: 2px 8px;">{مَالِكِ يَوْمِ الدِّينِ}</span> حيث تُقرأ كلمة "مالك" بحذف الألف وإثباتها.</p>
+            <p style="margin-top: 8px; font-size: 14px; color: var(--text-muted);">وسُمي فرشاً لانتشار تلك الحروف والكلمات المختلف فيها في سور القرآن الكريم، فكأنها انفرشت في السور أي: انتشرت. وقد يقال لها: الفروع مقابلة للأصول، وقيل: سمي هذا النوع بالفرش تشبيهاً له بصغار الغنم المنتشرة على أرض فضاء هنا وهناك، أو تشبيهاً لها بصغار الشجر.</p>
+
+            <!-- KESIMPULAN DARS 3 (INDONESIA) -->
+            <div class="summary-box-id">
+                <h4>📌 Rangkuman Ringkas Pelajaran 3 (Istilah-Istilah Ilmu Qira'at)</h4>
+                <ul>
+                    <li><strong>1. Al-Qira'ah (القراءة):</strong> Perbedaan bacaan yang disandarkan langsung kepada salah satu Imam Qira'at (contoh: Qira'ah Imam 'Atsim atau Imam Nafi').</li>
+                    <li><strong>2. Ar-Riwayah (الرواية):</strong> Perbedaan bacaan yang disandarkan kepada murid yang mengambil bacaan dari sang Imam, baik langsung/tanpa perantara maupun lewat perantara (contoh: Riwayat Hafsh dari 'Atsim).</li>
+                    <li><strong>3. At-Thariq (الطريق):</strong> Perbedaan bacaan yang disandarkan kepada murid yang mengambil bacaan dari Perawi/Riwayat ke bawah (contoh: Thariq Ubaid bin Ash-Shabbah untuk Riwayat Hafsh).</li>
+                    <li><strong>4. Al-Wajh (الوجه):</strong> Perbedaan bacaan yang sifatnya pilihan/pilihan yang diperbolehkan (seperti pilihan hukum bacaan Basmalah di antara dua surah). Pembaca cukup membaca salah satu wajadh saja.</li>
+                    <li><strong>5. Al-Ushul (الأصول):</strong> Kaidah-kaidah umum yang berlaku secara konsisten/menyeluruh di seluruh Al-Qur'an (seperti hukum Mad, Ha' Dhamir, Mim Jama', Tashil Hamzah, Imalah). Totalnya ada 37 ushul.</li>
+                    <li><strong>6. Al-Farsy (الفرش):</strong> Perbedaan bacaan khusus pada kata/ayat tertentu saja yang tersebar di surah-surah Al-Qur'an dan tidak berupa kaidah umum menyeluruh.</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- ================= BAGIAN 2: LESSON 4 ================= -->
+        <div class="card">
+            <div class="lesson-title">الدرس الرابع: أركان القراءة الصحيحة</div>
+
+            <!-- Elements Box -->
+            <div class="elements-box">
+                <h3>عناصر الدرس: يتكون هذا الدرس من ثلاثة أركان:</h3>
+                <ul>
+                    <li>الأول: أن تكون القراءة متواترة.</li>
+                    <li>الثاني: أن تكون موافقة للعربية ولو بوجه.</li>
+                    <li>الثالث: أن تكون موافقة لأحد المصاحف العثمانية ولو احتمالاً.</li>
+                </ul>
+            </div>
+
+            <div class="opinion-card" style="background-color: var(--highlight-bg); border-color: var(--accent-green);">
+                <p style="font-weight: bold; color: var(--dark-green);">أجمعت الأمة على هذه الأركان لقبول القراءات، قال الإمام ابن الجزري في "الطيبة":</p>
+                <div class="quote-box" style="font-size: 16px; margin-top: 8px;">
+                    فَكُـلُّ مَـا وَافَـقَ وَجْـهَ نَـحْـوِ ... وَكَـانَ لِـلرَّسْـمِ احْـتِـمَـالاً يَـحْـوِي<br>
+                    وَصَـحَّ إِسْنَاداً هُـوَ الْـقُـرْآنُ ... فَـهَـذِهِ الـثَّــلاَثَــةُ الأَرْكَــــانُ<br>
+                    وَحَـيْـثُـمَـا يَـخِـلَّ رُكْـنٌ أَثْـبِـتِ ... شُـذُوذَهُ لَـوْ أَنَّــهُ فِي السَّـبْـعَـةِ
+                </div>
+            </div>
+
+            <br>
+            <!-- الركن الأول -->
+            <h2 class="section-header">الركن الأول: أن تكون القراءة متواترة</h2>
+            <p><strong>التواتر:</strong> هو نقل جماعة عن جماعة يمتنع تواطؤهم على الكذب، من أول السند إلى منتهاه، من غير تعيين في العدد.</p>
+            <p style="margin-top: 8px;">والتواتر شرط أساسي عند الجمهور لقبول القراءة، ولا يروون الاكتفاء بصحة السند؛ ولذلك عرفوا القرآن بأنه: <span style="color: var(--medium-green); font-weight: bold;">ما نُقل إلينا بين دفتي المصحف نقلاً متواتراً جيلًا بعد جيل.</span></p>
+            <p style="margin-top: 6px; font-size: 14px; color: var(--text-muted);">فثبت بذلك أن ما ليس بمتواتر لا يسمى قرآناً، ولا يقرأ به تعبداً.</p>
+
+            <br>
+            <!-- الركن الثاني -->
+            <h2 class="section-header">الركن الثاني: أن تكون موافقة للعربية ولو بوجه</h2>
+            <p>ويكتفي في ذلك بمجرد موافقتها لوجه من وجوه اللغة العربية؛ أي: سواء كان هذا الوجه أفصح أم فصيحاً، مجمعاً عليه أم مختلفاً فيه، ما دامت القراءة صحيحة الإسناد، وموافقة لأحد المصاحف العثمانية، فلا يضرها كون الوجه ضعيفاً من حيث اللغة.</p>
+            
+            <p style="margin-top: 10px;">كقراءة الإمام حمزة بجر كلمة "والأرحام" من قوله تعالى: <span class="quote-box" style="font-size: 16px; padding: 2px 8px;">{وَاتَّقُوا اللَّهَ الَّذِي تَسَاءَلُونَ بِهِ وَالأَرْحَامِ}</span> حيث قرأ الباقون بالنصب عطفا على لفظ الجلالة.</p>
+            <p style="margin-top: 6px;">وقرأ الإمام حمزة بالجر في "والأرحام":</p>
+            <ul class="bullet-list">
+                <li>عطفاً على الضمير المجرور في "به" على مذهب الكوفيين.</li>
+                <li>أو على أن الجار أعيد؛ ولكنه حذف للعلم به.</li>
+                <li>أو على القسم: تعظيماً للأرحام وحثاً على صلتها -على قول البصريين- وجوابه "الله".</li>
+            </ul>
+            <p style="font-size: 14px; color: var(--text-muted); margin-top: 6px;">فقراءة الإمام حمزة صحيحة من حيث اللغة على كلا الوجهين، ولا قدح فيها، لا من حيث تواترها، ولا من حيث موافقتها لوجه من وجوه اللغة. فمتى ما صحت القراءة وثبتت فلا يردها قياس عربية ولا فُشُوّ لغة؛ لأن القراءة سنة متبعة يلزم قبولها والمصير إليها.</p>
+
+            <br>
+            <!-- الركن الثالث -->
+            <h2 class="section-header">الركن الثالث: أن تكون موافقة لأحد المصاحف العثمانية ولو احتمالاً</h2>
+            <p>والمراد من موافقتها لأحد المصاحف: <span style="color: var(--medium-green); font-weight: bold;">ما كان ثابتاً في بعضها دون بعض؛</span> كقراءة ابن عامر: <span class="quote-box" style="font-size: 16px; padding: 2px 8px;">{قَالُوا اتَّخَذَ اللَّهُ وَلَدًا سُبْحَانَهُ}</span> بغير واو قبل "قالوا"؛ لعدم وجودها في المصحف الشامي.</p>
+            <p style="margin-top: 8px;">وكقراءته بزيادة الباء في الاسمين من قوله تعالى: <span class="quote-box" style="font-size: 16px; padding: 2px 8px;">{وَبِالزُّبُرِ وَبِالْكِتَابِ الْمُنِيرِ}</span>؛ وذلك لثبوت الباء في ذلك المصحف.</p>
+            <p style="margin-top: 8px;">إلى غير ذلك من المواضع الكثيرة في القرآن الكريم التي اختلفت المصاحف فيها، فوردت القراءة عن أئمة تلك الأمصار على موافقة مصاحفهم، فلو لم يكن لها وجود في أحد من المصاحف العثمانية لكانت القراءة بها شاذة لمخالفتها للرسم المجمع عليه.</p>
+            <p style="margin-top: 8px;"><strong>والمراد من جملة "ولو احتمالاً":</strong> ما يوافق الرسم ولو تقديرًا؛ لأن موافقة القراءات للرسم قد تكون تحقيقاً وصريحاً، وقد تكون تقديرًا واحتمالاً، مثل قوله تعالى: <span class="quote-box" style="font-size: 16px; padding: 2px 8px;">{مَٰلِكِ يَوْمِ الدِّينِ}</span>.</p>
+            <p style="margin-top: 8px; font-size: 14px; color: var(--text-muted);">فقد كُتبت كلمة "ملك" في الفاتحة بدون ألف في جميع المصاحف، وقُرئت بإثبات الألف بعد الميم على وزن "فاعل"، وبدونها على وزن "فَعِل"، والقراءتان متواترتان.</p>
+
+            <!-- KESIMPULAN DARS 4 (INDONESIA) -->
+            <div class="summary-box-id">
+                <h4>📌 Rangkuman Ringkas Pelajaran 4 (Rukun-Rukun Qira'at yang Shahih)</h4>
+                <ul>
+                    <li><strong>Rukun Penerimaan Qira'at:</strong> Sebuah bacaan dianggap sah sebagai Al-Qur'an jika memenuhi 3 syarat utama (sesuai matan Ibnu Al-Jazari). Jika gugur 1 saja, maka bacaannya dianggap <em>Syaadz</em>.</li>
+                    <li><strong>1. Periwayatan Mutawatir (التواتر):</strong> Harus diriwayatkan oleh kelompok orang banyak dari kelompok orang banyak sampai ke Rasulullah ﷺ yang mustahil sepakat berbohong. Bacaan tanpa تواتر tidak sah dibaca sebagai ibadah Al-Qur'an.</li>
+                    <li><strong>2. Sesuai Kaidah Bahasa Arab (موافقة العربية):</strong> Sesuai dengan tata bahasa Arab walaupun cuma satu segi/sebagian pendapat ahli bahasa, baik fasih maupun kurang fasih (contoh: bacaan kasrah "والأرحامِ" oleh Imam Hamzah).</li>
+                    <li><strong>3. Sesuai Rasm Mushaf Utsmani (موافقة الرسم العثماني):</strong> Sesuai dengan tulisan mushaf Utsmani baik secara eksplisit (صريحاً) maupun tersembunyi/perkiraan (احتمالاً), seperti penulisan "مالك" tanpa alif yang bisa dibaca <em>Maaliki</em> maupun <em>Maliki</em>
