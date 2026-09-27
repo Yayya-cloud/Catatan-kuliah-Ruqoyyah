@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أساسيات علم القراءات - Pertemuan 2</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --dark-green: #1b4332;
+            --medium-green: #2d6a4f;
+            --accent-green: #52b788;
+            --soft-pastel-green: #d8f3dc;
+            --light-bg: #f4f9f5;
+            --card-bg: #ffffff;
+            --text-dark: #2d312e;
+            --text-muted: #525b56;
+            --highlight-bg: #e8f5e9;
+            --indo-box-bg: #f0fdf4;
+            --indo-border: #86efac;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Tajawal', 'Amiri', sans-serif;
+            background-color: var(--light-bg);
+            color: var(--text-dark);
+            line-height: 1.8;
+            padding: 20px 10px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin-bottom: 18px;
+            color: var(--medium-green);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+            direction: ltr;
+        }
+
+        /* Header Banner */
+        .main-header {
+            background: linear-gradient(135deg, var(--dark-green), var(--medium-green));
+            color: white;
+            padding: 30px 20px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(27, 67, 50, 0.15);
+            margin-bottom: 25px;
+        }
+
+        .main-header h1 {
+            font-family: 'Amiri', serif;
+            font-size: 28px;
+            margin-bottom: 8px;
+            color: var(--soft-pastel-green);
+        }
+
+        .main-header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        /* Card Section */
+        .card {
+            background: var(--card-bg);
+            border-radius: 14px;
+            padding: 25px;
+            margin-bottom: 25px;
+            border: 1px solid var(--soft-pastel-green);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+        }
+
+        .lesson-title {
+            background-color: var(--soft-pastel-green);
+            color: var(--dark-green);
+            padding: 10px 18px;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 20px;
+            border-right: 5px solid var(--dark-green);
+        }
+
+        .elements-box {
+            background-color: var(--highlight-bg);
+            border: 1px dashed var(--accent-green);
+            border-radius: 10px;
+            padding: 18px 22px;
+            margin-bottom: 20px;
+        }
+
+        .elements-box h3 {
+            color: var(--dark-green);
+            font-size: 17px;
+            margin-bottom: 10px;
+        }
+
+        .elements-box ul {
+            list-style-type: none;
+            padding-right: 10px;
+        }
+
+        .elements-box li {
+            position: relative;
+            padding-right: 20px;
+            margin-bottom: 6px;
+            color: var(--medium-green);
+            font-weight: 500;
+        }
+
+        .elements-box li::before {
+            content: "•";
+            color: var(--accent-green);
+            font-size: 20px;
+            position: absolute;
+            right: 0;
+            top: -2px;
+        }
+
+        /* Content Styling */
+        .section-header {
+            color: var(--dark-green);
+            font-size: 20px;
+            font-weight: bold;
+            margin: 20px 0 12px 0;
+            padding-bottom: 6px;
+            border-bottom: 2px solid var(--soft-pastel-green);
+        }
+
+        .definition-item {
+            margin-bottom: 15px;
+        }
+
+        .def-title {
+            font-weight: bold;
+            color: var(--medium-green);
+            display: inline-block;
+        }
+
+        .numbered-list, .bullet-list {
+            padding-right: 20px;
+            margin: 12px 0;
+        }
+
+        .numbered-list li, .bullet-list li {
+            margin-bottom: 8px;
+        }
+
+        .quote-box {
+            font-family: 'Amiri', serif;
+            background-color: #f9fbf9;
+            border-right: 4px solid var(--accent-green);
+            padding: 12px 18px;
+            margin: 12px 0;
+            border-radius: 4px 8px 8px 4px;
+            font-size: 18px;
+            color: var(--dark-green);
+        }
+
+        .opinion-card {
+            background-color: #fafdfa;
+            border: 1px solid var(--soft-pastel-green);
+            border-radius: 10px;
+            padding: 15px 18px;
+            margin-bottom: 12px;
+        }
+
+        .opinion-title {
+            font-weight: bold;
+            color: var(--dark-green);
+            margin-bottom: 6px;
+        }
+
+        /* Indonesian Summary Box (LTR) */
+        .summary-box-id {
+            direction: ltr;
+            text-align: left;
+            font-family: 'Poppins', 'Tajawal', sans-serif;
+            background-color: var(--indo-box-bg);
+            border: 1.5px solid var(--indo-border);
+            border-left: 6px solid var(--medium-green);
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 30px;
+            box-shadow: 0 2px 8px rgba(45, 106, 79, 0.05);
+        }
+
+        .summary-box-id h4 {
+            color: var(--dark-green);
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .summary-box-id ul {
+            padding-left: 20px;
+            margin-top: 8px;
+        }
+
+        .summary-box-id li {
+            font-size: 14px;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+
+        .summary-box-id strong {
+            color: var(--medium-green);
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            body { padding: 12px 6px; }
+            .card { padding: 18px 14px; }
+            .main-header h1 { font-size: 22px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Tombol Kembali -->
+        <a href="sem3.html" class="btn-back">← Kembali ke Daftar Matkul</a>
+        
+        <!-- Header Utama -->
+        <header class="main-header">
+            <h1>الحقيبة القرآنية: أساسيات علم القراءات</h1>
+            <p>المادة II: تعريف علم القراءات وعلاقته بالأحرف السبعة</p>
+        </header>
+
+        <!-- ================= BAGIAN 1: LESSON 1 ================= -->
+        <div class="card">
+            <div class="lesson-title">الدرس الأول: تعريف علم القراءات</div>
+
+            <!-- Elements Box -->
+            <div class="elements-box">
+                <h3>عناصر الدرس: يتكون هذا الدرس من ثلاثة عناصر:</h3>
+                <ul>
+                    <li>الأول: تعريف علم القراءات لغة واصطلاحاً.</li>
+                    <li>الثاني: موضوع علم القراءات.</li>
+                    <li>الثالث: مكانة علم القراءات.</li>
+                </ul>
+            </div>
+
+            <!-- العنصر الأول -->
+            <h2 class="section-header">العنصر الأول: تعريف علم القراءات لغة واصطلاحاً</h2>
+            
+            <div class="definition-item">
+                <p><span class="def-title">القراءات لغةً:</span> جمع قراءة، وهي مصدر قرأ يقرأ قراءة وقرآناً بمعنى: تلا تلاوة، وهي في الأصل بمعنى الجمع والضم، نقول: قرأت الماء في الحوض أي: جمعته فيه، وسمي "القرآن" قرآناً؛ لأنه اجمع الآيات والسور ويضم بعضها إلى بعض.</p>
+            </div>
+
+            <div class="definition-item">
+                <p><span class="def-title">واصطلاحاً:</span> عرَّفها القراء بتعاريف متعددة ومختلفة، ولعل تعريف الإمام ابن الجزري لها من أحسن التعاريف جمعاً وشمولاً، فقد عرفها -رحمه الله- بقوله:</p>
+                <div class="quote-box">
+                    "علم بكيفية أداء كلمات القرآن واختلافها بعزو الناقلة" <br>
+                    <small style="font-size: 13px; color: var(--text-muted);">(منجد المقرئين لابن الجزري ص ٣)</small>
+                </div>
+                <p>وعرَّفها الشيخ عبد الفتاح القاضي -رحمه الله- بقوله:</p>
+                <div class="quote-box">
+                    "هو علم يُعرف به كيفية النطق بالكلمات القرآنية، وطريق أدائها اتفاقاً واختلافاً مع عزو كل وجه لناقله" <br>
+                    <small style="font-size: 13px; color: var(--text-muted);">(البدور الزاهرة ص ٥)</small>
+                </div>
+            </div>
+
+            <!-- العنصر الثاني -->
+            <h2 class="section-header">العنصر الثاني: موضوع علم القراءات</h2>
+            <p>دراسة ما نقل من الخلاف الأصولي والفرشي من أئمة القراءات بأسانيد متصلة ومتواترة إلى الرسول ﷺ في الكلمات القرآنية؛ من حيث أحوال النطق بها وكيفية أدائها.</p>
+            <p style="margin-top: 10px;">وما دام أن <strong>"القراءة سنة متبعة"</strong> -كما أُثر ذلك عن أكثر من صحابي- فيعني ذلك أن القراءات هي ما نقل من ألفاظ القرآن الكريم من الرسول ﷺ تلاوة أو تقريراً.</p>
+            
+            <p style="margin-top: 15px; font-weight: bold; color: var(--medium-green);">وبهذا العلم المبارك تتعلق علوم أخرى مباشرة:</p>
+            <ul class="bullet-list">
+                <li>علم تراجم القراء.</li>
+                <li>علم توجيه القراءات.</li>
+                <li>علم رسم المصحف.</li>
+                <li>علم الضبط.</li>
+                <li>علم الفواصل.</li>
+                <li>علم التجويد، وغيرها من العلوم.</li>
+            </ul>
+
+            <!-- العنصر الثالث -->
+            <h2 class="section-header">العنصر الثالث: مكانة علم القراءات</h2>
+            <p>إن علم القراءات أشرف العلوم منزلة، وأرفعها مكانة، وهو مصدر جميع علوم العربية عموماً، وعلوم الشريعة خصوصاً، يحتاج إليه: المقرئ، والمفسر، والمحدث، والفقيه، واللغوي على السواء.</p>
+            <ul class="bullet-list">
+                <li>فبالقراءات ترجح بعض الأوجه التفسيرية.</li>
+                <li>وبعض الأحكام الفقهية.</li>
+                <li>ومنها تتجلى وجوه إعجاز القرآن الكريم، ويبرز سمو بلاغته.</li>
+                <li>واشتمل القرآن الكريم على القراءات المتعددة ميزة لا نظير لها في الكتب السماوية السابقة.</li>
+            </ul>
+
+            <!-- KESIMPULAN DARS 1 (INDONESIA) -->
+            <div class="summary-box-id">
+                <h4>📌 Rangkuman Ringkas Pelajaran 1 (Definisi & Kedudukan Ilmu Qira'at)</h4>
+                <ul>
+                    <li><strong>Pengertian secara Bahasa:</strong> Kata <em>Qira'at</em> adalah bentuk jamak dari <em>Qira'ah</em> (bacaan), berasal dari kata <em>Qara'a</em> yang berarti menghimpun/mengumpulkan.</li>
+                    <li><strong>Pengertian secara Istilah:</strong> Ilmu untuk mengetahui tata cara mengucapkan kata-kata Al-Qur'an dan perbedaan cara penyampaiannya yang disandarkan kepada periwayatnya (seperti definisi Ibnul Jazari & Syaikh Abdul Fattah Al-Qadhi).</li>
+                    <li><strong>Objek Pembahasan (موضوع العلم):</strong> Perbedaan bacaan Al-Qur'an (baik kaidah umum/ushul maupun rincian ayat/farsy) yang bersambung sanadnya secara mutawatir sampai ke Rasulullah ﷺ.</li>
+                    <li><strong>Ilmu Terkait:</strong> Ilmu Tarajum Qurra' (biografi pembaca Al-Qur'an), Towjih Qira'at, Rasm Al-Mushaf, Dhabth, Fawashil, dan Tajwid.</li>
+                    <li><strong>Kedudukan (مكانة العلم):</strong> Termasuk ilmu paling mulia karena berhubungan langsung dengan Al-Qur'an. Menjadi dasar penentu hukum fiqih, penjelas tafsir, serta bukti keindahan dan keukjizatan Al-Qur'an.</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- ================= BAGIAN 2: LESSON 2 ================= -->
+        <div class="card">
+            <div class="lesson-title">الدرس الثاني: علاقة القراءات بالأحرف السبعة</div>
+
+            <!-- Elements Box -->
+            <div class="elements-box">
+                <h3>عناصر الدرس: يتكون هذا الدرس من عنصرين:</h3>
+                <ul>
+                    <li>الأول: علاقة القراءات بالقرآن الكريم.</li>
+                    <li>الثاني: علاقة القراءات بالأحرف السبعة.</li>
+                </ul>
+            </div>
+
+            <!-- العنصر الأول -->
+            <h2 class="section-header">العنصر الأول: علاقة القراءات بالقرآن الكريم</h2>
+            <p style="margin-bottom: 12px;"><strong>للعلماء في ذلك آراء ثلاثة:</strong></p>
+
+            <div class="opinion-card">
+                <div class="opinion-title">١- رأي الإمام بدر الدين الزركشي (ت ٧٩٤هـ):</div>
+                <p>يرى أنهما <strong>حقيقتان متغايرتان</strong>. ودليله: أن القرآن هو الوحي المنزل على محمد ﷺ للبيان والإعجاز. والقراءات: اختلاف ألفاظ الوحي المذكور في الحروف أو كيفيتها من تخفيف وتشديد وغيرهما. ولا بُدَّ فيها من التلقي والمشافهة.</p>
+            </div>
+
+            <div class="opinion-card">
+                <div class="opinion-title">٢- رأي الدكتور محمد سالم محيسن:</div>
+                <p>يرى أنهما <strong>حقيقتان بمعنى واحد</strong>؛ لأن القرآن مصدر مرادف للقراءة، والقراءات جمع قراءة؛ إذن فهما حقيقتان بمعنى واحد، كما أن أحاديث نزول القرآن على الأحرف السبعة تدل دلالة واضحة على أنه لا فرق بينهما؛ إذ كل منهما وحي منزل.</p>
+            </div>
+
+            <div class="opinion-card">
+                <div class="opinion-title">٣- رأي الدكتور شعبان محمد إسماعيل:</div>
+                <p>يرى أنهما <strong>ليسا متغايرين تغايراً تاماً، كما أنهما ليسا متحدين اتحادات كلياً</strong>؛ بل بينهما ارتباط وثيق كارتتباط الجزء بالكل، وذلك لأن:</p>
+                <ul class="bullet-list" style="margin-top: 6px;">
+                    <li>أ- القراءات لا تشتمل كلمات القرآن كله؛ بل توجد في بعض ألفاظه فقط.</li>
+                    <li>ب- تعريف القراءات يشمل المتواترة والشاذة، وقد أجمعت الأمة على عدم قرآنية القراءات الشاذة.</li>
+                </ul>
+            </div>
+
+            <br>
+            <!-- العنصر الثاني -->
+            <h2 class="section-header">العنصر الثاني: علاقة القراءات بالأحرف السبعة</h2>
+            <p style="margin-bottom: 12px;"><strong>للعلماء في ذلك قولان:</strong></p>
+
+            <div class="opinion-card">
+                <div class="opinion-title">القول الأول: إن القراءات العشر تعتبر حرفاً واحداً من الأحرف السبعة المنزلة</div>
+                <p>ذهب إليه <strong>ابن جرير الطبري (ت ٣١٠هـ)</strong> وبعض اتباعه.</p>
+                <p style="font-size: 14px; color: var(--text-muted); margin-top: 5px;">* ودليلهم: أن عثمان -رضي الله عنه- حمل الأمة على مصاحفه، وقد كتبت على حرف قريش، وأمر بإحراق بقية المصاحف فأُرِكَت القراءة ببقية الأحرف؛ لعدم وجوب القراءة بجميعها؛ حيث إنها نزلت تخفيفاً وتيسيراً.</p>
+            </div>
+
+            <div class="opinion-card">
+                <div class="opinion-title">القول الثاني: إن القراءات العشر تعتبر بعض الأحرف السبعة المنزلة</div>
+                <p>ذهب إليه <strong>جمهور القراء</strong>.</p>
+                <p style="margin-top: 6px;">ودليلهم: أن الحروف السبع تنقسم إلى قسمين:</p>
+                <ul class="bullet-list" style="margin-top: 5px;">
+                    <li><strong>أ- زيادة كلمة أو نقص أخرى:</strong> نحو: "ليس عليكم جناح أن تبتغوا فضلاً من ربكم في مواسم الحج" أو تقديم كلمة على أخرى، نحو: "إذا جاء فتح الله والنصر"، أو إبدال كلمة بأخرى، نحو: "وتكون الجبال كالعهن / كالخوف المنفوش". <br><span style="color: #b91c1c; font-size: 13.5px;">وهذا القسم وما أشبهه متروك ولا تجوز القراءة به إجماعاً.</span></li>
+                    <li><strong>ب- ما اختلف فيه القراء من:</strong> إظهار وإدغام، وروم وإشمام، وقصر ومد، وتخفيف وتشديد، وإبدال حركة بأخرى، وياء بتاء، وواو بفاء.. ونحو ذلك من الاختلافات المتقاربة. <br><span style="color: var(--medium-green); font-size: 13.5px;">وهذا القسم هو المستعمل في زماننا هذا، وهو الموافق للمصاحف العثمانية.</span></li>
+                </ul>
+            </div>
+
+            <!-- KESIMPULAN DARS 2 (INDONESIA) -->
+            <div class="summary-box-id">
+                <h4>📌 Rangkuman Ringkas Pelajaran 2 (Hubungan Qira'at & Sab'atu Ahruf)</h4>
+                <ul>
+                    <li><strong>1. Hubungan Qira'at dengan Al-Qur'an:</strong>
+                        <br>• <em>Pendapat Imam Az-Zarkasyi:</em> Dua hal yang berbeda (Al-Qur'an adalah wahyu yang diturunkan untuk kemukjizatan, sedangkan Qira'at adalah ragam perbedaan lafaznya).
+                        <br>• <em>Pendapat Dr. Muh. Salim Muhaisin:</em> Dua hal yang sama persis (karena keduanya sama-sama wahyu).
+                        <br>• <em>Pendapat Dr. Sya'ban Muh. Ismail:</em> Memiliki hubungan erat seperti bagian dengan keseluruhan (bukan sama total dan bukan beda total).
+                    </li>
+                    <li><strong>2. Hubungan Qira'at 10 dengan 7 Huruf (الأحرف السبعة):</strong>
+                        <br>• <em>Pendapat Ibn Jarir At-Thabari:</em> Qira'at 10 berasal dari <strong>satu huruf saja</strong> dari 7 huruf, yaitu dialek Quraisy yang disatukan pada zaman Khalifah Utsman bin Affan.
+                        <br>• <em>Pendapat Jumhur القراء (Mayoritas Ahli Qira'at):</em> Qira'at 10 mencakup <strong>sebagian dari 7 huruf</strong> yang disesuaikan dan muat dalam Rasm (tulisan) Mushaf Utsmani (seperti perbedaan idgham, mad, harakat, penambahan ya/ta, dll).
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
