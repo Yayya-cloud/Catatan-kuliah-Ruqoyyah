@@ -43,15 +43,29 @@
             margin: 0 auto;
         }
 
+        /* Tombol Kembali (LTR) */
+        .btn-back-container {
+            direction: ltr;
+            text-align: left;
+            margin-bottom: 15px;
+        }
+
         .btn-back {
             display: inline-block;
-            margin-bottom: 18px;
             color: var(--medium-green);
             text-decoration: none;
+            font-family: 'Poppins', sans-serif;
             font-size: 14px;
             font-weight: 600;
-            font-family: 'Poppins', sans-serif;
-            direction: ltr;
+            background-color: var(--soft-pastel-green);
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: all 0.2s ease;
+        }
+
+        .btn-back:hover {
+            background-color: var(--accent-green);
+            color: white;
         }
 
         /* Header Banner */
@@ -241,7 +255,9 @@
 
     <div class="container">
         <!-- Tombol Kembali -->
-        <a href="sem3.html" class="btn-back">← Kembali ke Daftar Matkul</a>
+        <div class="btn-back-container">
+            <a href="javascript:history.back()" class="btn-back">← Kembali ke Daftar Pertemuan</a>
+        </div>
         
         <!-- Header Utama -->
         <header class="main-header">
