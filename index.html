@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catatan Perkuliahan Ruqoyyah</title>
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            background-color: #fdf6f7;
+            margin: 0;
+            padding: 0;
+            color: #4a3538;
+        }
+        .header-banner {
+            background: linear-gradient(135deg, #d81b60, #ad1457);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            border-bottom-left-radius: 24px;
+            border-bottom-right-radius: 24px;
+            box-shadow: 0 4px 15px rgba(216, 27, 96, 0.2);
+        }
+        .bismillah {
+            font-family: 'Amiri', serif;
+            font-size: 26px;
+            margin-bottom: 8px;
+            color: #ffe0b2;
+            direction: rtl;
+        }
+        .header-banner h1 { margin: 0 0 6px 0; font-size: 21px; font-weight: 700; }
+        .header-banner p { margin: 0; font-size: 13px; opacity: 0.9; }
+
+        .container { padding: 25px 18px 40px 18px; max-width: 600px; margin: 0 auto; }
+
+        .section-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: #ad1457;
+            margin-bottom: 15px;
+            letter-spacing: 0.5px;
+        }
+
+        .card-semester {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff;
+            border: 1.5px solid #f8bbd0;
+            border-radius: 14px;
+            padding: 16px 18px;
+            margin-bottom: 12px;
+            text-decoration: none;
+            color: #880e4f;
+            font-weight: 600;
+            font-size: 14px;
+            box-shadow: 0 2px 8px rgba(216, 27, 96, 0.05);
+            transition: all 0.2s ease;
+        }
+
+        .card-semester:active {
+            transform: scale(0.98);
+            background-color: #fce4ec;
+        }
+
+        .badge-sem {
+            background-color: #f8bbd0;
+            color: #880e4f;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .disabled-card {
+            opacity: 0.6;
+            cursor: not-allowed;
+            background-color: #fcf8f9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-banner">
+        <!-- Kalimat Basmalah -->
+        <div class="bismillah">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</div>
+        <h1>📚 Catatan Perkuliahan Ruqoyyah 🍰</h1>
+        <p>Ilmu Al-Qur'an dan Tafsir</p>
+    </div>
+
+    <div class="container">
+        <div class="section-title">📌 PILIH SEMESTER</div>
+
+        <!-- Semester 1 -->
+        <a href="#" class="card-semester disabled-card" onclick="alert('Materi Semester 1 belum tersedia!'); return false;">
+            <span>Semester 1</span>
+            <span class="badge-sem">Belum Ada</span>
+        </a>
+
+        <!-- Semester 2 -->
+        <a href="#" class="card-semester disabled-card" onclick="alert('Materi Semester 2 belum tersedia!'); return false;">
+            <span>Semester 2</span>
+            <span class="badge-sem">Belum Ada</span>
+        </a>
+
+        <!-- Semester 3 (Aktif ke sem3.html) -->
+        <a href="sem3.html" class="card-semester">
+            <span>Semester 3</span>
+            <span class="badge-sem">Masuk →</span>
+        </a>
+
+        <!-- Semester 4 -->
+        <a href="#" class="card-semester disabled-card" onclick="alert('Materi Semester 4 belum tersedia!'); return false;">
+            <span>Semester 4</span>
+            <span class="badge-sem">Belum Ada</span>
+        </a>
+
+        <!-- Semester 5 -->
+        <a href="#" class="card-semester disabled-card" onclick="alert('Materi Semester 5 belum tersedia!'); return false;">
+            <span>Semester 5</span>
+            <span class="badge-sem">Belum Ada</span>
+        </a>
+
+        <!-- Semester 6 -->
+        <a href="#" class="card-semester disabled-card" onclick="alert('Materi Semester 6 belum tersedia!'); return false;">
+            <span>Semester 6</span>
+            <span class="badge-sem">Belum Ada</span>
+        </a>
+    </div>
+
+</body>
+</html>
