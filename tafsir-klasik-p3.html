@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفسير القرآن العظيم لابن كثير - Pertemuan 3</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --navy-dark: #1e293b;
+            --navy-medium: #0f172a;
+            --navy-accent: #334155;
+            --tosca-pastel: #e0f2fe;
+            --tosca-soft: #bae6fd;
+            --tosca-accent: #0284c7;
+            --light-bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-dark: #1e293b;
+            --text-muted: #64748b;
+            --indo-box-bg: #f0f9ff;
+            --indo-border: #7dd3fc;
+            --bubble-bg: #e0f2fe;
+            --bubble-text: #0369a1;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Tajawal', 'Amiri', sans-serif;
+            background-color: var(--light-bg);
+            color: var(--text-dark);
+            line-height: 1.8;
+            padding: 20px 10px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Container Tombol Kembali Terpisah dan Aman dari Banner */
+        .btn-wrapper {
+            text-align: left !important;
+            margin-bottom: 20px !important;
+            margin-top: 5px !important;
+            direction: ltr !important;
+            display: block !important;
+            clear: both !important;
+        }
+
+        /* Tombol Bubble Kembali */
+        .btn-back-bubble {
+            display: inline-block !important;
+            background-color: var(--bubble-bg);
+            color: var(--bubble-text);
+            padding: 10px 22px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+            box-shadow: 0 2px 6px rgba(2, 132, 199, 0.12);
+            transition: all 0.2s ease;
+            border: 1px solid var(--tosca-soft);
+        }
+
+        .btn-back-bubble:active {
+            transform: scale(0.97);
+            background-color: var(--tosca-soft);
+        }
+
+        /* Header Banner Utama */
+        .main-header {
+            background: linear-gradient(135deg, var(--navy-medium), var(--navy-accent));
+            color: white;
+            padding: 30px 20px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(15, 23, 42, 0.15);
+            margin-bottom: 25px;
+            border-bottom: 4px solid var(--tosca-accent);
+            clear: both;
+        }
+
+        .main-header h1 {
+            font-family: 'Amiri', serif;
+            font-size: 28px;
+            margin-bottom: 8px;
+            color: var(--tosca-soft);
+        }
+
+        .main-header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        /* Card Section */
+        .card {
+            background: var(--card-bg);
+            border-radius: 14px;
+            padding: 25px;
+            margin-bottom: 25px;
+            border: 1px solid var(--tosca-soft);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+        }
+
+        .lesson-title {
+            background-color: var(--tosca-pastel);
+            color: var(--navy-medium);
+            padding: 10px 18px;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 20px;
+            border-right: 5px solid var(--tosca-accent);
+        }
+
+        /* Content Styling */
+        .section-header {
+            color: var(--navy-medium);
+            font-size: 20px;
+            font-weight: bold;
+            margin: 20px 0 12px 0;
+            padding-bottom: 6px;
+            border-bottom: 2px solid var(--tosca-pastel);
+        }
+
+        .numbered-list, .bullet-list {
+            padding-right: 20px;
+            margin: 12px 0;
+        }
+
+        .numbered-list li, .bullet-list li {
+            margin-bottom: 8px;
+        }
+
+        /* Indonesian Summary Box (LTR) */
+        .summary-box-id {
+            direction: ltr;
+            text-align: left;
+            font-family: 'Poppins', 'Tajawal', sans-serif;
+            background-color: var(--indo-box-bg);
+            border: 1.5px solid var(--indo-border);
+            border-left: 6px solid var(--tosca-accent);
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 30px;
+            box-shadow: 0 2px 8px rgba(2, 132, 199, 0.05);
+        }
+
+        .summary-box-id h4 {
+            color: var(--navy-medium);
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .summary-box-id ul {
+            padding-left: 20px;
+            margin-top: 8px;
+        }
+
+        .summary-box-id li {
+            font-size: 14px;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+
+        .summary-box-id strong {
+            color: var(--tosca-accent);
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            body { padding: 12px 6px; }
+            .card { padding: 18px 14px; }
+            .main-header h1 { font-size: 22px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Tombol Bubble Kembali di Posisi Kiri (Terpisah Sempurna) -->
+        <div class="btn-wrapper">
+            <a href="javascript:history.back()" class="btn-back-bubble">← Kembali ke Daftar Pertemuan</a>
+        </div>
+        
+        <!-- Header Utama -->
+        <header class="main-header">
+            <h1>دراسة التفسير الكلاسيكي</h1>
+            <p>المادة III: منهج ابن كثير في تفسيره "تفسير القرآن العظيم"</p>
+        </header>
+
+        <!-- BAGIAN 1: BIOGRAFI IBN KATSIR -->
+        <div class="card">
+            <div class="lesson-title">أولاً: التعريف بالإمام ابن كثير</div>
+
+            <p>هو الإمام إسماعيل بن عمر بن كثير القرشي الدمشقي، أبو الفداء، عماد الدين، ولد في حدود سنة ٧٠١ هـ، ونشأ في طلب العلم، ورحل في سبيله، وأخذ عن عدد من كبار علماء عصره، ومن أشهر شيوخه: <strong>ابن تيمية، والمزي، والذهبي</strong> وغيرهم.</p>
+
+            <p style="margin-top: 10px;">وكان ابن كثير من علماء الحديث والتفسير والتاريخ، وله مؤلفات متعددة، من أشهرها:</p>
+
+            <ol class="numbered-list">
+                <li><strong>تفسير القرآن العظيم.</strong></li>
+                <li><strong>البداية والنهاية.</strong></li>
+                <li><strong>اختصار علوم الحديث.</strong></li>
+                <li><strong>فضائل القرآن.</strong></li>
+                <li><strong>جامع المسانيد والسنن.</strong></li>
+            </ol>
+
+            <p style="margin-top: 10px;">وتوفي رحمه الله سنة ٧٧٤ هـ بدمشق.</p>
+
+            <h2 class="section-header">ثانياً: مكانة ابن كثير العلمية</h2>
+            <p>عُرف ابن كثير بسعة علمه بالحفاظ والحديث والرواية، وكان له منهج نقدي في التعامل مع الأخبار والمرويات، مما جعل تفسيره من أصح التفاسير بالمأثور وأكثرها قبولاً عند العلماء.</p>
+        </div>
+
+        <!-- RANGKUMAN INDONESIA -->
+        <div class="summary-box-id">
+            <h4>📌 Rangkuman Ringkas (Tafsir Ibn Katsir)</h4>
+            <ul>
+                <li><strong>Profil Penulis:</strong> Imām Ismā‘īl bin ‘Umar bin Katsīr ad-Dimasyqī (701 H – 774 H), ulama pakar hadits, sejarah, dan tafsir murid dari Ibn Taimiyyah, al-Mizzi, dan adz-Dzahabi.</li>
+                <li><strong>Karya Monumen:</strong> <em>Tafsīr al-Qur'ān al-‘Azhīm</em> dan <em>al-Bidāyah wan-Nihāyah</em>.</li>
+                <li><strong>Keunggulan Kitab:</strong> Dikenal sebagai salah satu kitab Tafsir bil-Ma'tsur paling sahih karena kecermatan beliau dalam meneliti sanad hadits dan menyaring riwayat Isra'iliyyat.</li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+</html>
