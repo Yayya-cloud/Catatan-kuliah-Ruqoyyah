@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منهج ابن كثير في تفسيره - Pertemuan 3</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --navy-dark: #1e293b;
+            --navy-medium: #0f172a;
+            --navy-accent: #334155;
+            --tosca-pastel: #e0f2fe;
+            --tosca-soft: #bae6fd;
+            --tosca-accent: #0284c7;
+            --light-bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-dark: #1e293b;
+            --text-muted: #64748b;
+            --indo-box-bg: #f0f9ff;
+            --indo-border: #7dd3fc;
+            --bubble-bg: #e0f2fe;
+            --bubble-text: #0369a1;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Tajawal', 'Amiri', sans-serif;
+            background-color: var(--light-bg);
+            color: var(--text-dark);
+            line-height: 1.8;
+            padding: 20px 10px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Container Tombol Kembali Terpisah dan Aman dari Banner */
+        .btn-wrapper {
+            text-align: left !important;
+            margin-bottom: 20px !important;
+            margin-top: 5px !important;
+            direction: ltr !important;
+            display: block !important;
+            clear: both !important;
+        }
+
+        /* Tombol Bubble Kembali */
+        .btn-back-bubble {
+            display: inline-block !important;
+            background-color: var(--bubble-bg);
+            color: var(--bubble-text);
+            padding: 10px 22px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+            box-shadow: 0 2px 6px rgba(2, 132, 199, 0.12);
+            transition: all 0.2s ease;
+            border: 1px solid var(--tosca-soft);
+        }
+
+        .btn-back-bubble:active {
+            transform: scale(0.97);
+            background-color: var(--tosca-soft);
+        }
+
+        /* Header Banner Utama */
+        .main-header {
+            background: linear-gradient(135deg, var(--navy-medium), var(--navy-accent));
+            color: white;
+            padding: 30px 20px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(15, 23, 42, 0.15);
+            margin-bottom: 25px;
+            border-bottom: 4px solid var(--tosca-accent);
+            clear: both;
+        }
+
+        .main-header h1 {
+            font-family: 'Amiri', serif;
+            font-size: 28px;
+            margin-bottom: 8px;
+            color: var(--tosca-soft);
+        }
+
+        .main-header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        /* Card Section */
+        .card {
+            background: var(--card-bg);
+            border-radius: 14px;
+            padding: 25px;
+            margin-bottom: 25px;
+            border: 1px solid var(--tosca-soft);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+        }
+
+        .lesson-title {
+            background-color: var(--tosca-pastel);
+            color: var(--navy-medium);
+            padding: 10px 18px;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 20px;
+            border-right: 5px solid var(--tosca-accent);
+        }
+
+        /* Content Styling */
+        .section-header {
+            color: var(--navy-medium);
+            font-size: 20px;
+            font-weight: bold;
+            margin: 25px 0 12px 0;
+            padding-bottom: 6px;
+            border-bottom: 2px solid var(--tosca-pastel);
+        }
+
+        .subsection-header {
+            color: var(--tosca-accent);
+            font-size: 17px;
+            font-weight: bold;
+            margin: 18px 0 8px 0;
+        }
+
+        .example-box {
+            background-color: #f8fafc;
+            border-right: 4px solid var(--tosca-accent);
+            padding: 12px 16px;
+            margin: 10px 0;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        .quran-text {
+            font-family: 'Amiri', serif;
+            color: #0369a1;
+            font-weight: bold;
+        }
+
+        .numbered-list, .bullet-list {
+            padding-right: 20px;
+            margin: 12px 0;
+        }
+
+        .numbered-list li, .bullet-list li {
+            margin-bottom: 8px;
+        }
+
+        /* Indonesian Summary Box (LTR) */
+        .summary-box-id {
+            direction: ltr;
+            text-align: left;
+            font-family: 'Poppins', 'Tajawal', sans-serif;
+            background-color: var(--indo-box-bg);
+            border: 1.5px solid var(--indo-border);
+            border-left: 6px solid var(--tosca-accent);
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 30px;
+            box-shadow: 0 2px 8px rgba(2, 132, 199, 0.05);
+        }
+
+        .summary-box-id h4 {
+            color: var(--navy-medium);
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .summary-box-id ul {
+            padding-left: 20px;
+            margin-top: 8px;
+        }
+
+        .summary-box-id li {
+            font-size: 14px;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+
+        .summary-box-id strong {
+            color: var(--tosca-accent);
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            body { padding: 12px 6px; }
+            .card { padding: 18px 14px; }
+            .main-header h1 { font-size: 22px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Tombol Bubble Kembali (LTR & Posisi Terpisah Aman) -->
+        <div class="btn-wrapper">
+            <a href="javascript:history.back()" class="btn-back-bubble">← Kembali ke Daftar Pertemuan</a>
+        </div>
+        
+        <!-- Header Utama -->
+        <header class="main-header">
+            <h1>دراسة التفسير الكلاسيكي</h1>
+            <p>المادة III: منهج ابن كثير في تفسيره "تفسير القرآن العظيم"</p>
+        </header>
+
+        <!-- KONTEN UTAMA MATERI ARAB -->
+        <div class="card">
+            
+            <!-- BIOGRAFI -->
+            <div class="lesson-title">أولاً: التعريف بالإمام ابن كثير</div>
+            <p>هو الإمام إسماعيل بن عمر بن كثير القرشي الدمشقي، أبو الفداء، عماد الدين، ولد في حدود سنة ٧٠١ هـ، ونشأ في طلب العلم، ورحل في سبيله، وأخذ عن عدد من كبار علماء عصره، ومن أشهر شيوخه: <strong>ابن تيمية، والمزي، والذهبي</strong> وغيرهم.</p>
+            <p style="margin-top: 10px;">وكان ابن كثير من علماء الحديث والتفسير والتاريخ، وله مؤلفات متعددة، من أشهرها:</p>
+            <ol class="numbered-list">
+                <li><strong>تفسير القرآن العظيم.</strong></li>
+                <li><strong>البداية والنهاية.</strong></li>
+                <li><strong>اختصار علوم الحديث.</strong></li>
+                <li><strong>فضائل القرآن.</strong></li>
+                <li><strong>جامع المسانيد والسنن.</strong></li>
+            </ol>
+            <p style="margin-top: 8px;">وتوفي رحمه الله سنة ٧٧٤ هـ بدمشق.</p>
+
+            <!-- KEDUDUKAN ILMIAH -->
+            <h2 class="section-header">ثانياً: مكانة ابن كثير العلمية</h2>
+            <p>احتل ابن كثير مكانة بارزة بين علماء التفسير لاجتماع علوم متعددة في شخصيته العلمية، ولا سيما التفسير والحديث والفقه والتاريخ. وقد انعكس هذا التكوين العلمي على تفسيره، فظهر فيه الاهتمام بالرواية، ونقد الأحاديث والآثار، والجمع بين أقوال السلف، مع الاستفادة من اللغة والقراءات والفقه.</p>
+
+            <!-- TENTANG TAFSIR IBN KATSIR -->
+            <h2 class="section-header">ثالثاً: التعريف بتفسير ابن كثير</h2>
+            <p>يُعرف الكتاب باسم "تفسير القرآن العظيم" وهو من أشهر كتب التفسير بالمأثور، وقد جمع فيه ابن كثير عدداً كبيراً من الروايات الواردة عن النبي ﷺ والصحابة والتابعين، مع عناية واضحة بتمييز الصحيح من الضعيف.</p>
+
+            <!-- MANHAJ IBN KATSIR -->
+            <h2 class="section-header">رابعاً: منهج ابن كثير في التفسير</h2>
+            
+            <div class="subsection-header">١- تفسير القرآن بالقرآن:</div>
+            <p>من أبرز مظاهر منهج ابن كثير تفسير الآية بآية أخرى توضح معناها أو تبين المراد منها.</p>
+            <div class="example-box">
+                <strong>مثال:</strong> قال الله تعالى: <span class="quran-text">﴿اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ ۝ صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ﴾</span> [الفاتحة: ٦-٧]. بيّن ابن كثير أن المقصود بـ <span class="quran-text">﴿الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ﴾</span> هم الذين ذكرهم الله تعالى في قوله: <span class="quran-text">﴿وَمَنْ يُطِعِ اللَّهَ وَالرَّسُولَ فَأُولَئِكَ مَعَ الَّذِينَ أَنْعَمَ اللَّهُ عَلَيْهِمْ مِنَ النَّبِيِّينَ وَالصِّدِّيقِينَ وَالشُّهَدَاءِ وَالصَّالِحِينَ وَحَسُنَ أُولَئِكَ رَفِيقًا﴾</span> [النساء: ٦٩].<br>
+                ثم يقرر ابن كثير أن هذه الآية فسرت المراد بالأنعم عليهم في سورة الفاتحة، فبينت أنهم أربع طوائف: الأنبياء، والصديقون، والشهداء، والصالحون.
+            </div>
+
+            <div class="subsection-header">٢- تفسير القرآن بالسنة النبوية:</div>
+            <p>يعتمد ابن كثير على السنة في بيان الآيات التي وردت السنة بتفسيرها.</p>
+            <div class="example-box">
+                <strong>المثال:</strong> قال الله تعالى: <span class="quran-text">﴿إِنَّ الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ كَانَتْ لَهُمْ جَنَّاتُ الْفِرْدَوْسِ نُزُلًا﴾</span> [الكهف: ١٠٧].<br>
+                عند تفسير ابن كثير لهذه الآية، يبيّن معنى <span class="quran-text">الفردوس</span> مستنداً إلى ما ورد عن النبي ﷺ، ومن ذلك قوله: <em>((إذا سألتم الله فاسألوه الفردوس، فإنه أوسط الجنة وأعلى الجنة، وفوقه عرش الرحمن))</em>. فيستفيد ابن كثير من الحديث النبوي في بيان حقيقة الفردوس وفضله ومكانه في الجنة.
+            </div>
+
+            <div class="subsection-header">٣- الاعتماد على أقوال الصحابة:</div>
+            <p>يولي ابن كثير أقوال الصحابة عناية كبيرة، ولا سيما أقوالهم في تفسير ألفاظ القرآن ومعانيه.</p>
+            <div class="example-box">
+                <strong>مثال:</strong> قال تعالى: <span class="quran-text">﴿اللَّهُ الصَّمَدُ﴾</span> [الإخلاص: ٢]. أورد ابن كثير أسانيد متعددة تنتهي إلى الصحابة، فقال: (قال علي بن أبي طلحة عن ابن عباس: هو السيد الذي قد كمل في سؤدده، والشريف الذي قد كمل في شرفه، والعظيم الذي قد كمل في عظمتة، والحليم الذي قد كمل في حلمه، والعليم الذي قد كمل في علمه، والحكيم الذي قد كمل في حكمته... وهو الله سبحانه، هذه صفته لا تنبغي إلا له).<br>
+                ثم أورد قولاً آخر عن عبد الله بن مسعود رضي الله عنه قال: "هو الذي لا جوف له".
+            </div>
+
+            <div class="subsection-header">٤- الاعتماد على أقوال التابعين:</div>
+            <p>ينقل ابن كثير أقوال عدد من السلف والتابعين في معنى الآية، ويعرض اختلافهم في تفسير ألفاظ السورة.</p>
+            <div class="example-box">
+                قال تعالى: <span class="quran-text">﴿وَصَدَّقَ بِالْحُسْنَى﴾</span> [الليل: ٦]. ينقل ابن كثير أقوال عدد من السلف والتابعين في معنى الآية، ويعرض اختلافهم في تفسير ألفاظ السورة فقال: (قال أبو عبد الرحمن السلمي والضحاك: <span class="quran-text">﴿وَصَدَّقَ بِالْحُسْنَى﴾</span> أي بلا إله إلا الله. وفي رواية عن عكرمة: <span class="quran-text">﴿وَصَدَّقَ بِالْحُسْنَى﴾</span> أي بما أنعم الله عليه، وفي رواية عن زيد بن أسلم: <span class="quran-text">﴿وَصَدَّقَ بِالْحُسْنَى﴾</span> قال: الصلاة والزكاة والصوم. وقال مرة وصدقة الفطر).
+            </div>
+
+            <div class="subsection-header">٥- الاستفادة من القراءات:</div>
+            <p>يستفيد ابن كثير من القراءات القرآنية في بيان المعنى.</p>
+            <div class="example-box">
+                <strong>مثال:</strong> قال تعالى: <span class="quran-text">﴿مَالِكِ يَوْمِ الدِّينِ﴾</span> [الفاتحة: ٤]. يذكر ابن كثير القراءات الواردة في لفظ <span class="quran-text">﴿مَالِكِ﴾</span>، ومن أشهرها قراءة: <strong>مَالِكِ يَوْمِ الدِّينِ</strong>، وقراءة: <strong>مَلِكِ يَوْمِ الدِّينِ</strong>. ثم يبين أن القراءتين صحيحتان، وأن كل واحدة منهما تضيف معنى صحيحاً إلى دلالة الآية؛ فالله تعالى مالك يوم الدين وملكه.
+            </div>
+
+            <div class="subsection-header">٦- الاستفادة من اللغة العربية:</div>
+            <p>يستفيد ابن كثير من اللغة في تفسير المفردات القرآنية، ولكنه لا يجعل البحث اللغوي منفصلاً عن المعنى العام للآية.</p>
+            <div class="example-box">
+                <strong>مثال:</strong> قال تعالى: <span class="quran-text">﴿وَإِمَّا يَنْزَغَنَّكَ مِنَ الشَّيْطَانِ نَزْغٌ فَاسْتَعِذْ بِاللَّهِ إِنَّهُ هُوَ السَّمِيعُ الْعَلِيمُ﴾</span> [فصلت: ٣٦]. فقال ابن كثير في معنى الشيطان (والشيطان في لغة العرب مشتق من شطن إذا بعد، فهو بعيد بطبعه عن طباع البشر وبعيد بفسقه عن كل خير، وقيل مشتق من شاط لأنه مخلوق من نار، ومنهم من يقول: كلاهما صحيح في المعنى ولكن الأول أصح، وعليه يدل كلام العرب).
+            </div>
+
+            <div class="subsection-header">٧- الاستفادة من أسباب النزول:</div>
+            <p>يستعين ابن كثير بأسباب النزول عند تفسير الآيات التي ثبت سبب نزولها.</p>
+            <div class="example-box">
+                <strong>مثال:</strong> قال تعالى: <span class="quran-text">﴿قَدْ سَمِعَ اللَّهُ قَوْلَ الَّتِي تُجَادِلُكَ فِي زَوْجِهَا وَتَشْتَكِي إِلَى اللَّهِ﴾</span> [المجادلة: ١]. يذكر ابن كثير قصة خولة بنت ثعلبة رضي الله عنها، ومجادلتها للنبي ﷺ في شأن زوجها الذي ظاهر منها، ثم يربط سبب النزول بالحكم الذي فرضته الآيات في شأن الظهار.
+            </div>
+
+            <div class="subsection-header">٨- يذكر آيات الأحكام:</div>
+            <p>يعرض ابن كثير الأقوال الفقهية الواردة في تفسير الآيات، ويذكر الأدلة المتعلقة بالحكم.</p>
+            <div class="example-box">
+                <strong>مثال:</strong> قال الله تعالى: <span class="quran-text">﴿يَا أَيُّهَا الَّذِينَ آمَنُوا إِذَا قُمْتُمْ إِلَى الصَّلَاةِ فَاغْسِلُوا وُجُوهَكُمْ وَأَيْدِيَكُمْ إِلَى الْمَرَافِقِ﴾</span> [المائدة: ٦]. تعرض ابن كثير لمسائل فقهية متعلقة بالوضوء، مثل:
+                <ul class="bullet-list">
+                    <li>غسل الوجه.</li>
+                    <li>غسل اليدين إلى المرافق.</li>
+                    <li>مسح الراس.</li>
+                    <li>غسل الرجلين.</li>
+                    <li>حكم الترتيب في الوضوء.</li>
+                    <li>مسائل أخرى متعلقة بالطهارة.</li>
+                </ul>
+            </div>
+
+            <div class="subsection-header">٩- منهجه في الإسرائيليات:</div>
+            <p>يورد ابن كثير بعض أخبار بني إسرائيل التي تجوز روايتها، ولكنه لا يسوي بينها وبين النصوص الصحيحة.</p>
+            <div class="example-box">
+                <strong>مثال:</strong> عند تفسير قول تعالى: <span class="quran-text">﴿وَإِذْ قُلْنَا لِلْمَلَائِكَةِ اسْجُدُوا لِآدَمَ فَسَجَدُوا إِلَّا إِبْلِيسَ كَانَ مِنَ الْجِنِّ فَفَسَقَ عَنْ أَمْرِ رَبِّهِ أَفَتَتَّخِذُونَهُ وَذُرِّيَّتَهُ أَوْلِيَاءَ مِنْ دُونِي وَهُمْ لَكُمْ عَدُوٌّ بِئْسَ لِلظَّالِمِينَ بَدَلًا﴾</span> [الكهف: ٥٠]. بعد أن ذكر أقوالاً في "إبليس" واسمه ومن أي قبيل هو؟ قال: <em>"وقد رُويت في هذا آثار كثيرة عن السلف، وغالبها من الإسرائيليات التي تُنقل لينظر فيها، والله أعلم بحال كثير منها، ومنها ما قد يُقطع بكذبه، لمخالفته للحق الذي بأيدينا، وفي القرآن غنية عن كل ما عداه من الأخبار المتقدمة؛ لأنها لا تكاد تخلو من تبديل وزيادة ونقصان"</em>.
+            </div>
+
+            <div class="subsection-header">١٠- الترجيح بين الأقوال:</div>
+            <p>لا يقتصر ابن كثير على نقل الأقوال، وإنما يرجح أحياناً أحدها.</p>
+            <div class="example-box">
+                <strong>مثال:</strong> عند تفسيره قول الله تعالى: <span class="quran-text">﴿اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ﴾</span> [الفاتحة: ٦]، ينقل أقوال السلف في معنى الصراط المستقيم، ومن ذلك أنه الإسلام، وأنه القرآن، وأنه طريق الحق، ثم يبين أن هذه المعاني متقاربة ولا تعارض بينها.
+            </div>
+
+            <!-- SUMBER-SUMBER TAFSIR -->
+            <h2 class="section-header">خامساً: مصادره في التفسير</h2>
+            
+            <p style="font-weight: bold; margin-top: 10px;">المصادر الأصلية:</p>
+            <ol class="numbered-list">
+                <li>القرآن الكريم.</li>
+                <li>السنة النبوية.</li>
+                <li>أقوال الصحابة.</li>
+                <li>أقوال التابعين.</li>
+                <li>القراءات.</li>
+                <li>اللغة العربية.</li>
+            </ol>
+
+            <p style="font-weight: bold; margin-top: 15px;">المصادر التفسيرية والحديثية التي استفاد منها:</p>
+            <ol class="numbered-list" start="7">
+                <li>تفسير الطبري.</li>
+                <li>تفسير ابن أبي حاتم.</li>
+                <li>تفسير ابن المنذر.</li>
+                <li>تفسير عبد بن حميد.</li>
+                <li>كتب الحديث، وفي مقدمتها الصحيحان والمسانيد والسنن.</li>
+                <li>كتب أسباب النزول.</li>
+                <li>كتب اللغة والفقه والقراءات.</li>
+            </ol>
+
+        </div>
+
+        <!-- RANGKUMAN BAHASA INDONESIA -->
+        <div class="summary-box-id">
+            <h4>📌 Rangkuman Ringkas (Tafsir Ibn Katsir - Pertemuan 3)</h4>
+            <ul>
+                <li><strong>Profil Penulis:</strong> Imām Ismā‘īl bin ‘Umar bin Katsīr ad-Dimasyqī (701 H – 774 H)[span_4](start_span)[span_4](end_span), seorang ulama pakar hadits, sejarah, dan tafsir murid dari Ibn Taimiyyah, al-Mizzi, dan adz-Dzahabi[span_5](start_span)[span_5](end_span).</li>
+                <li><strong>Karya Utama:</strong> <em>Tafsīr al-Qur'ān al-‘Azhīm</em>[span_6](start_span)[span_6](end_span) dan kitab sejarah <em>al-Bidāyah wan-Nihāyah</em>[span_7](start_span)[span_7](end_span).</li>
+                <li><strong>Kedudukan Kitab:</strong> Rujukan utama dalam <strong>Tafsir bil-Ma'tsur</strong> yang sangat memperhatikan keshahihan riwayat dan selektif terhadap Isra'iliyyat[span_8](start_span)[span_8](end_span)[span_9](start_span)[span_9](end_span).</li>
+                <li><strong>Metodologi Utama (Manhaj):</strong>
+                    <br>1. Menafsirkan Al-Qur'an dengan Al-Qur'an[span_10](start_span)[span_10](end_span).
+                    <br>2. Menafsirkan dengan Sunnah/Hadits Nabi ﷺ[span_11](start_span)[span_11](end_span)[span_12](start_span)[span_12](end_span).
+                    <br>3. Menggunakan rujukan pendapat Sahabat dan Tabi'in[span_13](start_span)[span_13](end_span).
+                    <br>4. Memanfaatkan Qira'at, Bahasa Arab, dan Asbabun Nuzul[span_14](start_span)[span_14](end_span).
+                    <br>5. Membahas ayat-ayat hukum (fiqih) serta bersikap kritis terhadap riwayat Isra'iliyyat[span_15](start_span)[span_15](end_span).
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+</html>
