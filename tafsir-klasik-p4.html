@@ -43,7 +43,13 @@
             max-width: 900px;
             margin: 0 auto;
         }
-
+        /* Tombol Kembali (LTR) */
+        .btn-back-container {
+            direction: ltr;
+            text-align: left;
+            margin-bottom: 15px;
+        }
+        
         .btn-back {
             display: inline-block;
             margin-bottom: 18px;
@@ -53,6 +59,10 @@
             font-weight: 600;
             font-family: 'Poppins', sans-serif;
             direction: ltr;
+        }
+        .btn-back:hover {
+            background-color: var(--accent-blue);
+            color: white;
         }
 
         /* Header Banner */
@@ -186,9 +196,11 @@
 </head>
 <body>
 
-    <div class="container">
+  <div class="container">
         <!-- Tombol Kembali -->
-        <a href="sem3.html" class="btn-back">← Kembali ke Daftar Matkul</a>
+        <div class="btn-back-container">
+            <a href="javascript:history.back()" class="btn-back">← Kembali ke Daftar Pertemuan</a>
+        </div>
         
         <!-- Header Utama -->
         <header class="main-header">
