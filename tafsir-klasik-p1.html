@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مدخل إلى مناهج المفسرين - Pertemuan 1</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --navy-dark: #1e293b;
+            --navy-medium: #0f172a;
+            --navy-accent: #334155;
+            --tosca-pastel: #e0f2fe;
+            --tosca-soft: #bae6fd;
+            --tosca-accent: #0284c7;
+            --light-bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-dark: #1e293b;
+            --text-muted: #64748b;
+            --indo-box-bg: #f0f9ff;
+            --indo-border: #7dd3fc;
+            --bubble-bg: #e0f2fe;
+            --bubble-text: #0369a1;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Tajawal', 'Amiri', sans-serif;
+            background-color: var(--light-bg);
+            color: var(--text-dark);
+            line-height: 1.8;
+            padding: 20px 10px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Container Tombol Kembali di Kiri */
+        .btn-wrapper {
+            text-align: left;
+            margin-bottom: 20px;
+            direction: ltr;
+        }
+
+        /* Tombol Bubble Kembali (JavaScript History) */
+        .btn-back-bubble {
+            display: inline-block;
+            background-color: var(--bubble-bg);
+            color: var(--bubble-text);
+            padding: 10px 22px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+            box-shadow: 0 2px 6px rgba(2, 132, 199, 0.08);
+            transition: all 0.2s ease;
+            border: 1px solid var(--tosca-soft);
+        }
+
+        .btn-back-bubble:active {
+            transform: scale(0.97);
+            background-color: var(--tosca-soft);
+        }
+
+        /* Header Banner */
+        .main-header {
+            background: linear-gradient(135deg, var(--navy-medium), var(--navy-accent));
+            color: white;
+            padding: 30px 20px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(15, 23, 42, 0.15);
+            margin-bottom: 25px;
+            border-bottom: 4px solid var(--tosca-accent);
+        }
+
+        .main-header h1 {
+            font-family: 'Amiri', serif;
+            font-size: 28px;
+            margin-bottom: 8px;
+            color: var(--tosca-soft);
+        }
+
+        .main-header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        /* Card Section */
+        .card {
+            background: var(--card-bg);
+            border-radius: 14px;
+            padding: 25px;
+            margin-bottom: 25px;
+            border: 1px solid var(--tosca-soft);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+        }
+
+        .lesson-title {
+            background-color: var(--tosca-pastel);
+            color: var(--navy-medium);
+            padding: 10px 18px;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 20px;
+            border-right: 5px solid var(--tosca-accent);
+        }
+
+        /* Content Styling */
+        .section-header {
+            color: var(--navy-medium);
+            font-size: 20px;
+            font-weight: bold;
+            margin: 20px 0 12px 0;
+            padding-bottom: 6px;
+            border-bottom: 2px solid var(--tosca-pastel);
+        }
+
+        .numbered-list, .bullet-list {
+            padding-right: 20px;
+            margin: 12px 0;
+        }
+
+        .numbered-list li, .bullet-list li {
+            margin-bottom: 8px;
+        }
+
+        .quote-box {
+            font-family: 'Amiri', serif;
+            background-color: #f1f5f9;
+            border-right: 4px solid var(--tosca-accent);
+            padding: 12px 18px;
+            margin: 12px 0;
+            border-radius: 4px 8px 8px 4px;
+            font-size: 18px;
+            color: var(--navy-dark);
+        }
+
+        /* Indonesian Summary Box (LTR) */
+        .summary-box-id {
+            direction: ltr;
+            text-align: left;
+            font-family: 'Poppins', 'Tajawal', sans-serif;
+            background-color: var(--indo-box-bg);
+            border: 1.5px solid var(--indo-border);
+            border-left: 6px solid var(--tosca-accent);
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 30px;
+            box-shadow: 0 2px 8px rgba(2, 132, 199, 0.05);
+        }
+
+        .summary-box-id h4 {
+            color: var(--navy-medium);
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .summary-box-id ul {
+            padding-left: 20px;
+            margin-top: 8px;
+        }
+
+        .summary-box-id li {
+            font-size: 14px;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+
+        .summary-box-id strong {
+            color: var(--tosca-accent);
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            body { padding: 12px 6px; }
+            .card { padding: 18px 14px; }
+            .main-header h1 { font-size: 22px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Tombol Bubble Kembali di Posisi Kiri -->
+        <div class="btn-wrapper">
+            <a href="javascript:history.back()" class="btn-back-bubble">← Kembali ke Daftar Pertemuan</a>
+        </div>
+        
+        <!-- Header Utama -->
+        <header class="main-header">
+            <h1>دراسة التفسير الكلاسيكي</h1>
+            <p>المادة I: دراسة مناهج كتب التفسير القديمة (المدخل والمفاهيم)</p>
+        </header>
+
+        <!-- ================= BAGIAN 1: PENGANTAR & DEFINISI ================= -->
+        <div class="card">
+            <div class="lesson-title">تمهيد وتعريف علم مناهج المفسرين</div>
+
+            <p>القرآن الكريم هو كلام الله تعالى، أنزله على نبيه محمد ﷺ ليكون هداية للناس. وقد اعتنى المسلمون منذ عصر الصحابة بفهم معانيه وتدبر آياته والعمل بأحكامه. ومع اتساع البلاد الإسلامية ودخول أقوام مختلفين في الإسلام، ظهرت الحاجة إلى تفسير القرآن وبيان معانيه، فاجتهد العلماء في ذلك، وتنوعت طرقهم وأساليبهم في التفسير.</p>
+            <p style="margin-top: 10px;">ومن هنا نشأ <strong>علم مناهج المفسرين</strong> الذي يهتم بدراسة الطرق التي سار عليها المفسرون في فهم القرآن وتفسيره، وبيان مصادرهم وقواعدهم واتجاهاتهم، مع التعرف على أوجه الاتفاق والاختلاف بينهم.</p>
+
+            <h2 class="section-header">تعريف مناهج المفسرين</h2>
+            <div class="quote-box">
+                <strong>مناهج المفسرين هي:</strong> «دراسة الطريقة التي يفسر بها كل مفسر القرآن، وما المصادر التي يعتمد عليها، وما العلوم التي تظهر في تفسيره، وما القواعد التي يسير عليها»، فهي كالخطة المحكّمة التي وضعها المفسر عند تفسيره للقرآن الكريم.
+            </div>
+
+            <h2 class="section-header">الفرق بين «منهج المفسر» و«اتجاه المفسر»</h2>
+            <p>من المهم التمييز بين المصطلحين:</p>
+            
+            <ul class="bullet-list">
+                <li><strong>١- منهج المفسر:</strong> هو (الطريقة التي يسلكها المفسر في تفسير القرآن)؛ مثل: تفسير القرآن بالقرآن، تفسير القرآن بالسنة، الاعتماد على أقوال الصحابة والتابعين، الاستفادة من اللغة العربية، الاستدلال بالأحكام الفقهية، الاستفادة من القراءات والعلوم المختلفة.</li>
+                <li><strong>٢- اتجاه المفسر:</strong> هو (المجال العلمي أو الفكري غالب على تفسيره)؛ مثل: الاتجاه الفقهي، الاتجاه اللغوي، الاتجاه العقدي، الاتجاه الصوفي، الاتجاه العلمي، الاتجاه الاجتماعي.</li>
+            </ul>
+
+            <p style="background-color: var(--tosca-pastel); padding: 10px 15px; border-radius: 8px; color: var(--navy-medium); font-weight: bold; margin-top: 10px;">
+                💡 فيمكن أن نقول: (المنهج هو الطريقة، والاتجاه هو المجال الغالب على التفسير).
+            </p>
+        </div>
+
+        <!-- ================= BAGIAN 2: URGENSI & PERKEMBANGAN ================= -->
+        <div class="card">
+            <div class="lesson-title">أهمية علم مناهج المفسرين ونشأته</div>
+
+            <h2 class="section-header">أهمية معرفة مناهج المفسرين</h2>
+            <p>تظهر أهمية هذا العلم في أمور كثيرة منها:</p>
+            <ol class="numbered-list">
+                <li><strong>معرفة طرق فهم القرآن:</strong> يساعد الطالب على معرفة الطرق التي استخدمها العلماء في تفسير كتاب الله، فلا ينظر إلى كتب التفسير على أنها متشابهة في الطريقة والمصادر.</li>
+                <li><strong>معرفة مصادر المفسر:</strong> يكشف هذا العلم عن المصادر التي اعتمد عليها المفسر، مثل القرآن والسنة وأقوال الصحابة والتابعين واللغة العربية والفقه وغيرها.</li>
+                <li><strong>فهم أسباب اختلاف المفسرين:</strong> قد يختلف المفسرون في تفسير آية واحدة بسبب اختلافهم في اللغة، أو الحديث، أو القراءات، أو القواعد الأصولية، أو الترجيح بين الأقوال.</li>
+                <li><strong>التمييز بين التفسير المقبول والتفسير غير المقبول:</strong> فدراسة مناهج المفسرين تساعد على معرفة مدى التزام المفسر بالقواعد العلمية، ومدى صحة الأدلة التي يعتمد عليها.</li>
+                <li><strong>معرفة خصائص كتب التفسير:</strong> لكل تفسير خصائص تميزه عن غيره؛ فبعضها يهتم باللغة، وبعضها بالأحكام، وبعضها بالعقيدة، وبعضها بالرواية، وبعضها بالمقاصد والإصلاح الاجتماعي.</li>
+            </ol>
+
+            <h2 class="section-header">نشأة علم مناهج المفسرين</h2>
+            <p>لم يظهر علم مناهج المفسرين في صورة علم مستقل منذ بداية التفسير، وإنما ظهرت أصوله تدريجياً مع نشأة علم التفسير وتطور التأليف فيه:</p>
+            <ul class="bullet-list">
+                <li>ففي <strong>عهد النبي ﷺ</strong> كان هو المرجع في بيان معاني القرآن، وكان يفسر لأصحابه ما يحتاجون إلى بيانه.</li>
+                <li>ثم جاء <strong>عصر الصحابة</strong>، فاعتمدوا في تفسير القرآن على القرآن والسنة، وما عرفوه من أسباب النزول، وعلى اللغة العربية، واجتهادهم وفهمهم للنص.</li>
+                <li>ثم جاء <strong>عصر التابعين</strong>، واتسعت دائرة التفسير، وظهرت مدارس تفسيرية في عدد من الأمصار، مثل: مدرسة مكة والمدينة والعراق.</li>
+                <li>وبعد ذلك بدأ العلماء في <strong>تدوين التفسير</strong>، وتنوعت كتب التفسير ومناهج أصحابها، فظهر التفسير بالمأثور، والتفسير الفقهي، واللغوي، والعقدي، وغيرها.</li>
+            </ul>
+            <p style="margin-top: 10px; font-size: 14px; color: var(--text-muted);">ومع كثرة التفاسير وتنوعها، احتاج العلماء إلى دراسة هذه التفاسير ومناهج أصحابها، فاستقل هذا الموضوع تدريجياً بالدراسة والتأليف، وأصبح ما يعرف اليوم بـ <strong>«علم مناهج المفسرين»</strong>.</p>
+        </div>
+
+        <!-- ================= BAGIAN 3: UNSIUR & CARA MENGETAHUI MANHAJ ================= -->
+        <div class="card">
+            <div class="lesson-title">عناصر منهج المفسر وكيفية معرفته</div>
+
+            <h2 class="section-header">أهم عناصر منهج المفسر</h2>
+            <p>عند دراسة منهج أي مفسر ينبغي النظر في مجموعة من العناصر، أهمها:</p>
+            <ul class="bullet-list">
+                <li>١- مصادر التفسير: من أين يأخذ المفسر معلوماته؟</li>
+                <li>٢- منهجه في تفسير القرآن بالقرآن.</li>
+                <li>٣- منهجه في الاستدلال بالسنة النبوية.</li>
+                <li>٤- موقفه من أقوال الصحابة والتابعين.</li>
+                <li>٥- موقفه من الإسرائيليات.</li>
+                <li>٦- اعتماده على اللغة العربية والشعر العربي.</li>
+                <li>٧- موقفه من القراءات القرآنية.</li>
+                <li>٨- منهجه في المسائل الفقهية والعقدية.</li>
+                <li>٩- منهجه في الترجيح بين الأقوال وموقفه من أسباب النزول.</li>
+                <li>١٠- طريقة عرض التفسير وترتيبه والاتجاه الغالب عليه.</li>
+            </ul>
+
+            <h2 class="section-header">كيف يُعرف منهج المفسر؟</h2>
+            <p>لمعرفة المنهج إحدى طريقين:</p>
+            <ol class="numbered-list">
+                <li><strong>الطريق الأول:</strong> أن ينص المفسر على شرطه في التفسير في أول تفسيره أو في مواضع متفرقة من تفسيره مع خطة الكتاب. فإذا نص على شرطه في تفسيره صارت تلك الشروط المخصوصة منهجاً له (كما فعل ابن كثير والقرطبي).</li>
+                <li><strong>الطريق الثاني:</strong> أن يُعلم شرطه في التفسير ويُعلم المنهج عن طريق <strong>الاستقراء</strong> (الاستقراء التام أو الأغلبي)، فإذا استقرأ أحد أهل العلم تفسيراً من التفاسير استقراءً صحيحاً دل على صحة ما بحث بالاستقراء.</li>
+            </ol>
+
+            <h2 class="section-header">فوائد دراسة مناهج المفسرين للطالب</h2>
+            <p>بعد دراسة هذا العلم يُفترض أن يكون الطالب قادراً على:</p>
+            <ul class="bullet-list">
+                <li>التعرف على أشهر مدارس التفسير والتمييز بين مناهج المفسرين.</li>
+                <li>معرفة مصادر كل تفسير وفهم أسباب اختلاف المفسرين.</li>
+                <li>المقارنة بين تفاسير متعددة ومعرفة الاتجاه الغالب على كل تفسير.</li>
+                <li>اكتشاف مواطن القوة والضعف في بعض المناهج والتعامل مع كتب التفسير بطريقة علمية صحيحة.</li>
+            </ul>
+
+            <h2 class="section-header">أبرز الكتب التي تحدثت عن مناهج المفسرين</h2>
+            <ol class="numbered-list">
+                <li><em>التفسير والمفسرون</em> - للدكتور محمد حسين الذهبي.</li>
+                <li><em>مناهج المفسرين (القسم الأول: عصر الصحابة)</em> - للدكتور مصطفى مسلم.</li>
+                <li><em>مناهج المفسرين</em> - للدكتور أحمد بن محمد الشرقاوي.</li>
+                <li><em>مناهج المفسرين من العصر الأول إلى العصر الحديث</em> - للدكتور محمود النقراشي.</li>
+                <li><em>مناهج المفسرين</em> - للدكتور منيع عبد الحليم محمود.</li>
+            </ol>
+
+            <!-- KESIMPULAN DARS (INDONESIA) -->
+            <div class="summary-box-id">
+                <h4>📌 Rangkuman Ringkas (Konsep Dasar Manhaj Mufassirin)</h4>
+                <ul>
+                    <li><strong>Pengertian Manhaj Mufassirin:</strong> Ilmu yang mempelajari metode, cara kerja, kaidah, dan sumber-sumber yang digunakan oleh para mufassir dalam memahami dan menafsirkan Al-Qur'an.</li>
+                    <li><strong>Perbedaan Perpenting:</strong>
+                        <br>• <strong>Manhaj (منهج):</strong> Metode/langkah teknis yang ditempuh mufassir (misal: menafsirkan dengan hadits, bahasa, qira'at, dll).
+                        <br>• <strong>Ittijah (اتجاه):</strong> Kecenderungan corak pemikiran yang mendominasi kitabnya (misal: Corak Fiqih, Bahasa, Akidah, Sastra-Sosial).
+                    </li>
+                    <li><strong>Cara Mengetahui Manhaj Mufassir:</strong> Ada 2 jalan, yaitu melalui <strong>Pernyataan Langsung Mufassir</strong> di muqaddimah kitabnya (seperti Ibnu Katsir & Al-Qurthubi), atau melalui <strong>Istiqra' (Penelitian & Analisis Mendalam)</strong> atas isi kitabnya.</li>
+                    <li><strong>Urgensi Studi:</strong> Membantu mahasiswa memahami latar belakang perbedaan penafsiran, membedakan tafsir yang مقبول (diterima) dan mardud (ditolak), serta mengetahui kelebihan/karakteristik tiap kitab klasik.</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
