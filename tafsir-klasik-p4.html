@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منهج الإمام البغوي في تفسيره - Pertemuan 4</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --navy-dark: #1e293b;
+            --navy-medium: #0f172a;
+            --navy-accent: #334155;
+            --tosca-pastel: #e0f2fe;
+            --tosca-soft: #bae6fd;
+            --tosca-accent: #0284c7;
+            --light-bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-dark: #1e293b;
+            --text-muted: #64748b;
+            --indo-box-bg: #f0f9ff;
+            --indo-border: #7dd3fc;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Tajawal', 'Amiri', sans-serif;
+            background-color: var(--light-bg);
+            color: var(--text-dark);
+            line-height: 1.8;
+            padding: 20px 10px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin-bottom: 18px;
+            color: var(--tosca-accent);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+            direction: ltr;
+        }
+
+        /* Header Banner */
+        .main-header {
+            background: linear-gradient(135deg, var(--navy-medium), var(--navy-accent));
+            color: white;
+            padding: 30px 20px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(15, 23, 42, 0.15);
+            margin-bottom: 25px;
+            border-bottom: 4px solid var(--tosca-accent);
+        }
+
+        .main-header h1 {
+            font-family: 'Amiri', serif;
+            font-size: 28px;
+            margin-bottom: 8px;
+            color: var(--tosca-soft);
+        }
+
+        .main-header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        /* Card Section */
+        .card {
+            background: var(--card-bg);
+            border-radius: 14px;
+            padding: 25px;
+            margin-bottom: 25px;
+            border: 1px solid var(--tosca-soft);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+        }
+
+        .lesson-title {
+            background-color: var(--tosca-pastel);
+            color: var(--navy-medium);
+            padding: 10px 18px;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 20px;
+            border-right: 5px solid var(--tosca-accent);
+        }
+
+        /* Content Styling */
+        .section-header {
+            color: var(--navy-medium);
+            font-size: 20px;
+            font-weight: bold;
+            margin: 20px 0 12px 0;
+            padding-bottom: 6px;
+            border-bottom: 2px solid var(--tosca-pastel);
+        }
+
+        .numbered-list, .bullet-list {
+            padding-right: 20px;
+            margin: 12px 0;
+        }
+
+        .numbered-list li, .bullet-list li {
+            margin-bottom: 8px;
+        }
+
+        .quote-box {
+            font-family: 'Amiri', serif;
+            background-color: #f1f5f9;
+            border-right: 4px solid var(--tosca-accent);
+            padding: 12px 18px;
+            margin: 12px 0;
+            border-radius: 4px 8px 8px 4px;
+            font-size: 18px;
+            color: var(--navy-dark);
+        }
+
+        .highlight-text {
+            color: #d97706;
+            font-weight: bold;
+        }
+
+        /* Indonesian Summary Box (LTR) */
+        .summary-box-id {
+            direction: ltr;
+            text-align: left;
+            font-family: 'Poppins', 'Tajawal', sans-serif;
+            background-color: var(--indo-box-bg);
+            border: 1.5px solid var(--indo-border);
+            border-left: 6px solid var(--tosca-accent);
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 30px;
+            box-shadow: 0 2px 8px rgba(2, 132, 199, 0.05);
+        }
+
+        .summary-box-id h4 {
+            color: var(--navy-medium);
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .summary-box-id ul {
+            padding-left: 20px;
+            margin-top: 8px;
+        }
+
+        .summary-box-id li {
+            font-size: 14px;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+
+        .summary-box-id strong {
+            color: var(--tosca-accent);
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            body { padding: 12px 6px; }
+            .card { padding: 18px 14px; }
+            .main-header h1 { font-size: 22px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Tombol Kembali -->
+        <a href="sem3.html" class="btn-back">← Kembali ke Daftar Matkul</a>
+        
+        <!-- Header Utama -->
+        <header class="main-header">
+            <h1>دراسة التفسير الكلاسيكي</h1>
+            <p>المادة IV: منهج الإمام البغوي في تفسيره "معالم التنزيل"</p>
+        </header>
+
+        <!-- ================= BAGIAN 1: BIOGRAFI IMAM AL-BAGHAWI ================= -->
+        <div class="card">
+            <div class="lesson-title">أولاً: التعريف بالإمام البغوي</div>
+
+            <p>هو الإمام الحافظ، شيخ الإسلام، محيي السنة، أبو محمد الحسين بن مسعود بن محمد بن الفراء البغوي الشافعي. يُنسب إلى "بَغَشور" (أو بَغ) وهي بلدة شهيرة كانت تقع بين هراة ومرو الرود في خراسان (تقع حالياً في أراضي أفغانستان/تركمانستان). ولد سنة ٤٣٣ هـ تقريباً.</p>
+            <p style="margin-top: 8px;">نشأ البغوي في بيت علم وزهد، وتتلمذ على كبار أئمة عصره في الحديث والفقه والتفسير، ومن أبرز شيوخه:</p>
+            
+            <ol class="numbered-list">
+                <li><strong>القاضي حسين بن محمد المروروذي:</strong> شيخ الشافعية بخراسان في عصره، وعنه أخذ الفقه.</li>
+                <li><strong>أبو عمر عبد الواحد بن أحمد المليحي:</strong> راوية كتاب "صحيح البخاري"، وعنه أخذ الكثير من الحديث والأثر.</li>
+                <li><strong>أبو الحسن علي بن يوسف الجويني.</strong></li>
+            </ol>
+
+            <h2 class="section-header">ثناء العلماء عليه ومكانته</h2>
+            <p>حاز البغوي لقب <strong>(محيي السنة)</strong> و <strong>(ركن الدين)</strong> لتمسكه بالشريعة، وعنايته الكبيرة بنشر الأحاديث الصحيحة.</p>
+            <div class="quote-box">
+                قال عنه الإمام الذهبي: "الإمام، العلامة، الحافظ، المفسر، ركن الدين، محيي السنة... وكان البغوي يلقب بمحيي السنة وبمحيي الدين، وكان سيداً زاهداً قانعاً باليسير".
+            </div>
+            <div class="quote-box">
+                وقال عنه ابن نقطة: "كان إماماً جليلاً، ورعاً، حسيباً، فقيهًا، محدثاً، مفسراً".
+            </div>
+
+            <h2 class="section-header">مؤلفاته</h2>
+            <p>ترك البغوي ثروة علمية جامعة، منها:</p>
+            <ul class="bullet-list">
+                <li><strong>شرح السنة:</strong> من أعظم كتب الحديث والفقه المقارن.</li>
+                <li><strong>المصابيح:</strong> في الحديث، وهو الأصل الذي بنى عليه التبريزي كتابه "مشكاة المصابيح".</li>
+                <li><strong>الجمع بين الصحيحين.</strong></li>
+                <li><strong>التهذيب:</strong> في فقه الإمام الشافعي.</li>
+                <li><strong>معالم التنزيل:</strong> في التفسير.</li>
+            </ul>
+
+            <p style="margin-top: 15px; font-size: 14px; color: var(--text-muted);">توفي الإمام البغوي في شهر شوال سنة ٥١٦ هـ بمدينة "مرو الرود"، ودفن بجانب شيخه القاضي حسين، بعد حياة حافلة بالتعليم والتأليف.</p>
+        </div>
+
+        <!-- ================= BAGIAN 2: MANHAJ TAFSIR ================= -->
+        <div class="card">
+            <div class="lesson-title">ثانياً: التعريف بتفسير "معالم التنزيل" ومناهجه</div>
+
+            <h2 class="section-header">١- منهج البغوي في تفسير القرآن بالقرآن</h2>
+            <p>من أبرز خصائص منهج البغوي أنه يستعين بالآيات القرآنية في بيان معاني بعضها بعضاً؛ لأن القرآن قد يوجز معنى في موضع ويفصله في موضع آخر، نحو قوله تعالى: <span class="quote-box" style="font-size: 16px; padding: 2px 8px;">{وَيَمُدُّهُمْ فِي طُغْيَانِهِمْ يَعْمَهُونَ}</span> [البقرة: ١٥].</p>
+            <p style="margin-top: 8px;">يشرح البغوي معنى «المد»، ويستشهد بآيات أخرى ورد فيها هذا اللفظ، ومنها قوله تعالى: <span class="quote-box" style="font-size: 16px; padding: 2px 8px;">{فَلْيَمْدُدْ لَهُ الرَّحْمَٰنُ مَدًّا}</span> [مريم: ٧٥]، وقوله تعالى: <span class="quote-box" style="font-size: 16px; padding: 2px 8px;">{وَنَمُدُّ لَهُ مِنَ الْعَذَابِ مَدًّا}</span> [مريم: ٧٩].</p>
+            <p style="margin-top: 8px; font-weight: bold; color: var(--tosca-accent);">الخلاصة: من طرق البغوي في التفسير أن يفسر اللفظ القرآني بما ورد في آيات أخرى من القرآن.</p>
+
+            <h2 class="section-header">٢- تفسير القرآن بالسنة النبوية</h2>
+            <p>يولي البغوي السنة النبوية عناية كبيرة، فيورد الأحاديث التي تبين معاني الآيات أو توضح أحكامها أو أسباب نزولها، ولذلك يعد تفسيره من التفاسير التي يظهر فيها وضوح منهج التفسير بالمأثور.</p>
+            <p style="margin-top: 8px;">ومن أمثلة ذلك عند تفسيره لبعض الآيات المتعلقة بفضائل سورة الفاتحة، إيراده حديث ابن عباس رضي الله عنهما في نزول الملك وبشارة النبي ﷺ بفاتحة الكتاب وخواتيم سورة البقرة.</p>
+            <p style="margin-top: 8px; font-weight: bold; color: var(--tosca-accent);">الخلاصة: السنة عند البغوي مصدر أساسي في تفسير القرآن، وخاصة فيما يحتاج إلى بيان نبوي.</p>
+
+            <h2 class="section-header">٣- تفسير القرآن بأقوال الصحابة</h2>
+            <p>يقوم منهج البغوي كذلك على الاستفادة من أقوال الصحابة؛ لأنهم شهدوا التنزيل، وعرفوا أسباب النزول، وتلقوا البيان النبوي مباشرة. فعند تفسيره قوله تعالى: <span class="quote-box" style="font-size: 16px; padding: 2px 8px;">{وَآخَرِينَ مِنْهُمْ لَمَّا يَلْحَقُوا بِهِمْ}</span> [الجمعة: ٣]، عرض البغوي أقوالاً متعددة ونقل ذلك عن ابن عمر وسعيد بن جبير وغيرهما، ثم أورد حديث أبي هريرة رضي الله عنه في اتصال الآية بأهل فارس.</p>
+
+            <h2 class="section-header">٤- عنايته بأقوال التابعين</h2>
+            <p>لا يقتصر البغوي على أقوال الصحابة، بل ينقل أيضاً عن التابعين؛ لما لهم من منزلة في فهم القرآن، ولا سيما من أخذوا التفسير عن الصحابة (مثل عكرمة، مجاهد، مقاتل، ابن زيد، وغيرهم).</p>
+
+            <h2 class="section-header">٥- عنايته بأسباب النزول</h2>
+            <p>من الجوانب المهمة في منهج البغوي اهتمامه بأسباب نزول الآيات؛ لما لها من أثر في فهم السياق القرآني وتحديد المراد من النص. ومن الأمثلة على ذلك: عند تفسيره لقول الله تعالى: <span class="quote-box" style="font-size: 16px; padding: 2px 8px;">{قَدْ سَمِعَ اللَّهُ قَوْلَ الَّتِي تُجَادِلُكَ فِي زَوْجِهَا...}</span> [المجادلة: ١]، ذكر البغوي أن الآية نزلت في خولة بنت ثعلبة وزوجها أوس بن الصامت.</p>
+
+            <h2 class="section-header">٦- عنايته باللغة وغريب القرآن</h2>
+            <p>اهتم البغوي ببيان معاني الألفاظ غريبة في القرآن، لكنه لم يتوسع في ذلك توسع أصحاب التفاسير اللغوية، وإنما كان يذكر من اللغة ما يحتاج إليه لفهم الآية. مثل تفسيره لقوله تعالى: <span class="quote-box" style="font-size: 16px; padding: 2px 8px;">{فَتَكُونُ كَالْعَهْنِ}</span> فقال: «والعهن: الصوف المصبوغ».</p>
+
+            <h2 class="section-header">٧- عنايته بالقراءات والإعراب</h2>
+            <p>يذكر البغوي في تفسيره بعض القراءات القرآنية، ويستفيد منها في بيان اختلاف المعنى أو توجيه الآية. مثل قوله تعالى: <span class="quote-box" style="font-size: 16px; padding: 2px 8px;">{مَالِكِ يَوْمِ الدِّينِ}</span> حيث ذكر قراءة عاصم والكسائي ويعقوب «مالك» وقراءة الباقين «ملك»، وبين تقاربهما في المعنى.</p>
+
+            <h2 class="section-header">٨- عنايته بالأحكام الفقهية</h2>
+            <p>اشتمل تفسير البغوي على جملة من المسائل الفقهية المستنبطة من الآيات، ولا سيما آيات الأحكام، مع ظهور أثر تكوينه الفقهي الشافعي في عدد من المواضع (مثل آية السرقة قطع اليد والنصاب وغيرها).</p>
+
+            <h2 class="section-header">٩- عنايته بالعقيدة</h2>
+            <p>يظهر في تفسير البغوي اتباعه لمنهج أهل السنة في مسائل الاعتقاد، بعيداً عن التوسع الكلامي والفلسفي، كما في آية الاستواء: <span class="quote-box" style="font-size: 16px; padding: 2px 8px;">{الرَّحْمَٰنُ عَلَى الْعَرْشِ اسْتَوَىٰ}</span> [طه: ٥].</p>
+
+            <h2 class="section-header">١٠- منهجه في التعامل مع الإسرائيليات</h2>
+            <p>أورد البغوي في تفسيره بعض الأخبار الإسرائيلية، ولا سيما عند تفسير قصص الأنبياء والأمم السابقة (مثل قصص أصحاب الكهف)، مع ذكر beberapa rincian tanpa menetapkan kebenarannya jika tidak ada nash sahih.</p>
+
+            <h2 class="section-header">١١- الاختصار والاعتدال في التفسير</h2>
+            <p>تميز البغوي بالاعتدال في حجم تفسيره، فلم يسلك طريق التفاسير المطولة التي تستطرد في علوم كثيرة، ولم يقتصر اختصاراً يخل بفهم الآية. ولهذا وصف بأنه كتاب متوسط جامع للعلوم التفسير بعبارة واضحة.</p>
+
+            <h2 class="section-header">مصادر البغوي في التفسير</h2>
+            <p>اعتمد الإمام البغوي في "معالم التنزيل" على مصادر متعددة، يأتي في مقدمتها القرآن الكريم، والسنة النبوية، وأقوال الصحابة والتابعين، والقراءات القرآنية، وأقوال أهل اللغة والنحو، وأسباب النزول، وأقوال الفقهاء. ويظهر من ذلك أن تفسيره يجمع بين المأثور واللغة والقراءات والفقه، مع غلبة جانب الرواية والأثر عليه.</p>
+
+            <!-- KESIMPULAN DARS (INDONESIA) -->
+            <div class="summary-box-id">
+                <h4>📌 Rangkuman Ringkas (Metode Tafsir Imam Al-Baghawi)</h4>
+                <ul>
+                    <li><strong>Profil Imam Al-Baghawi:</strong> Bernama Al-Husain bin Mas'ud Al-Baghawi Al-Farra' (wafat 516 H). Bermazhab Syafi'i, berakidah Ahlus Sunnah, dan digelari <em>Muhyis Sunnah</em> (Penghidup Sunnah) karena kedalaman ilmunya di bidang hadits dan tafsir.</li>
+                    <li><strong>Nama Kitab Tafsir:</strong> <em>Ma'alim At-Tanzil</em> (معالم التنزيل), termasuk salah satu rujukan utama dalam kategori <strong>Tafsir bil Ma'tsur</strong> (tafsir berbasis riwayat).</li>
+                    <li><strong>Poin-Poin Utama Metodologi Tafsirnya:</strong>
+                        <br>1. <strong>Tafsir Al-Qur'an dengan Al-Qur'an:</strong> Menjelaskan ayat menggunakan ayat lain yang sepadan.
+                        <br>2. <strong>Sandaran Hadits & Atsar:</strong> Sangat memperhatikan Hadits Nabi, atsar Sahabat, dan Tabi'in.
+                        <br>3. <strong>Sebab Nuzul & Qira'at:</strong> Menyebutkan asbabun nuzul dan variasi bacaan Qira'at untuk memperjelas makna.
+                        <br>4. <strong>Bahasa & Fiqih:</strong> Menjelaskan kosakata asing (Gharibul Qur'an) dan hukum fiqih (dengan kecenderungan Mazhab Syafi'i) tanpa berbelit-belit.
+                        <br>5. <strong>Sikap Ringkas & Moderat:</strong> Bahasa tafsirnya sedang, mudah dipahami, tidak terlalu panjang dan tidak terlalu ringkas.
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
