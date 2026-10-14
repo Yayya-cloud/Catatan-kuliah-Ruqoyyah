@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surah Al-Qalam (سُورَةُ القَلَمِ) - Catatan Kuliah</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            background-color: #f4fbf7;
+            margin: 0;
+            padding: 0;
+            color: #2d3748;
+        }
+
+        /* Banner Header Pastel Mint Green */
+        .header-banner {
+            background: linear-gradient(135deg, #0d9488, #0f766e);
+            color: white;
+            text-align: center;
+            padding: 28px 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            box-shadow: 0 4px 14px rgba(15, 118, 110, 0.18);
+        }
+        .header-banner h1 { 
+            margin: 0 0 6px 0; 
+            font-size: 24px; 
+            font-weight: 700; 
+            color: #ccfbf1; 
+        }
+        .header-banner p { 
+            margin: 0; 
+            font-size: 13.5px; 
+            opacity: 0.95; 
+        }
+
+        .container { 
+            padding: 20px 15px 40px 15px; 
+            max-width: 750px; 
+            margin: 0 auto; 
+        }
+
+        /* Tombol Bubble Kembali */
+        .btn-wrapper {
+            text-align: left;
+            margin-bottom: 18px;
+            direction: ltr;
+        }
+
+        .btn-back {
+            display: inline-block;
+            color: #0f766e;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            background-color: #ccfbf1;
+            padding: 8px 18px;
+            border-radius: 20px;
+            border: 1px solid #99f6e4;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.04);
+            transition: all 0.2s;
+        }
+        .btn-back:active { transform: scale(0.97); }
+
+        /* Card Ayat */
+        .verse-card {
+            background-color: #ffffff;
+            border: 1.5px solid #e6f4ed;
+            border-radius: 14px;
+            padding: 20px 18px;
+            margin-bottom: 18px;
+            box-shadow: 0 2px 8px rgba(13, 148, 136, 0.05);
+        }
+
+        .verse-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 14px;
+            border-bottom: 1px dashed #99f6e4;
+            padding-bottom: 10px;
+        }
+
+        .surah-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: #0f766e;
+        }
+
+        .verse-number {
+            background-color: #ccfbf1;
+            color: #0f766e;
+            font-weight: 700;
+            font-size: 12px;
+            padding: 4px 12px;
+            border-radius: 20px;
+            border: 1px solid #99f6e4;
+        }
+
+        .bismillah {
+            font-family: 'Amiri', serif;
+            font-size: 26px;
+            text-align: center;
+            direction: rtl;
+            color: #0d9488;
+            margin: 10px 0 25px 0;
+            padding: 12px;
+            background-color: #f0fdf4;
+            border-radius: 10px;
+            border: 1px solid #dcfce7;
+        }
+
+        .arabic-text {
+            font-family: 'Amiri', serif;
+            font-size: 25px;
+            line-height: 2.3;
+            text-align: right;
+            direction: rtl;
+            color: #111827;
+            margin-bottom: 14px;
+            word-spacing: 2px;
+        }
+
+        .translation-text {
+            font-size: 13.5px;
+            line-height: 1.7;
+            color: #4b5563;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-banner">
+        <h1>✨ Surah Al-Qalam (سُورَةُ القَلَمِ)</h1>
+        <p>Surah ke-68 • 52 Ayat • Makkiyah</p>
+    </div>
+
+    <div class="container">
+        <!-- Tombol Kembali -->
+        <div class="btn-wrapper">
+            <a href="javascript:history.back()" class="btn-back">← Kembali</a>
+        </div>
+
+        <!-- Bismillah -->
+        <div class="bismillah">
+            بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ
+        </div>
+
+        <!-- Ayat 1 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 1</span>
+            </div>
+            <div class="arabic-text">نٓ ۚ وَالْقَلَمِ وَمَا يَسْطُرُونَ</div>
+            <div class="translation-text">Nun. Demi pena dan apa yang mereka tuliskan,</div>
+        </div>
+
+        <!-- Ayat 2 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 2</span>
+            </div>
+            <div class="arabic-text">مَا أَنْتَ بِنِعْمَةِ رَبِّكَ بِمَجْنُونٍ</div>
+            <div class="translation-text">berkat nikmat Tuhanmu engkau (Muhammad) bukanlah orang gila.</div>
+        </div>
+
+        <!-- Ayat 3 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 3</span>
+            </div>
+            <div class="arabic-text">وَإِنَّ لَكَ لَأَجْرًا غَيْرَ مَمْنُونٍ</div>
+            <div class="translation-text">Dan sesungguhnya engkau pasti mendapat pahala yang besar yang tidak putus-putusnya.</div>
+        </div>
+
+        <!-- Ayat 4 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 4</span>
+            </div>
+            <div class="arabic-text">وَإِنَّكَ لَعَلَىٰ خُلُقٍ عَظِيمٍ</div>
+            <div class="translation-text">Dan sesungguhnya engkau benar-benar berbudi pekerti yang luhur.</div>
+        </div>
+
+        <!-- Ayat 5 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 5</span>
+            </div>
+            <div class="arabic-text">فَسَتُبْصِرُ وَيُبْصِرُونَ</div>
+            <div class="translation-text">Maka kelak engkau akan melihat dan mereka (orang-orang kafir) pun akan melihat,</div>
+        </div>
+
+        <!-- Ayat 6 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 6</span>
+            </div>
+            <div class="arabic-text">بِأَيِّيكُمُ الْمَفْتُونُ</div>
+            <div class="translation-text">siapa di antara kamu yang gila.</div>
+        </div>
+
+        <!-- Ayat 7 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 7</span>
+            </div>
+            <div class="arabic-text">إِنَّ رَبَّكَ هُوَ أَعْلَمُ بِمَنْ ضَلَّ عَنْ سَبِيلِهِ وَهُوَ أَعْلَمُ بِالْمُهْتَدِينَ</div>
+            <div class="translation-text">Sungguh, Tuhanmu, Dialah yang paling mengetahui siapa yang sesat dari jalan-Nya; dan Dialah yang paling mengetahui siapa orang-orang yang mendapat petunjuk.</div>
+        </div>
+
+        <!-- Ayat 8 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 8</span>
+            </div>
+            <div class="arabic-text">فَلَا تُطِعِ الْمُكَذِّبِينَ</div>
+            <div class="translation-text">Maka janganlah engkau patuhi orang-orang yang mendustakan (ayat-ayat Allah).</div>
+        </div>
+
+        <!-- Ayat 9 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 9</span>
+            </div>
+            <div class="arabic-text">وَدُّوا لَوْ تُدْهِنُ فَيُدْهِنُونَ</div>
+            <div class="translation-text">Merekam menginginkan agar engkau bersikap lunak maka mereka bersikap lunak (pula).</div>
+        </div>
+
+        <!-- Ayat 10 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 10</span>
+            </div>
+            <div class="arabic-text">وَلَا تُطِعْ كُلَّ حَلَّافٍ مَهِينٍ</div>
+            <div class="translation-text">Dan janganlah engkau patuhi setiap orang yang suka bersumpah lagi hina,</div>
+        </div>
+
+        <!-- Ayat 11 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 11</span>
+            </div>
+            <div class="arabic-text">هَمَّازٍ مَشَّاءٍ بِنَمِيمٍ</div>
+            <div class="translation-text">yang suka mencela, yang kian kemari menyebar fitnah,</div>
+        </div>
+
+        <!-- Ayat 12 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 12</span>
+            </div>
+            <div class="arabic-text">مَنَّاعٍ لِلْخَيْرِ مُعْتَدٍ أَثِيمٍ</div>
+            <div class="translation-text">yang sangat menghalangi berbuat kebaikan, yang melampaui batas lagi banyak dosa,</div>
+        </div>
+
+        <!-- Ayat 13 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 13</span>
+            </div>
+            <div class="arabic-text">عُتُلٍّ بَعْدَ ذَٰلِكَ زَنِيمٍ</div>
+            <div class="translation-text">yang bertabiat kasar, selain itu juga terkenal kejahatannya,</div>
+        </div>
+
+        <!-- Ayat 14 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 14</span>
+            </div>
+            <div class="arabic-text">أَنْ كَانَ ذَا مَالٍ وَبَنِينَ</div>
+            <div class="translation-text">karena dia kaya mempunyai harta dan anak-anak.</div>
+        </div>
+
+        <!-- Ayat 15 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 15</span>
+            </div>
+            <div class="arabic-text">إِذَا تُتْلَىٰ عَلَيْهِ آيَاتُنَا قَالَ أَسَاطِيرُ الْأَوَّلِينَ</div>
+            <div class="translation-text">Apabila ayat-ayat Kami dibacakan kepadanya, dia berkata, "(Ini adalah) dongeng-dongeng orang purbakala."</div>
+        </div>
+
+        <!-- Ayat 16 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 16</span>
+            </div>
+            <div class="arabic-text">سَنَسِمُهُ عَلَى الْخُرْطُومِ</div>
+            <div class="translation-text">Kelak dia akan Kami beri tanda pada belalai (hidung)nya.</div>
+        </div>
+
+        <!-- Ayat 17 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 17</span>
+            </div>
+            <div class="arabic-text">إِنَّا بَلَوْنَاهُمْ كَمَا بَلَوْنَا أَصْحَابَ الْجَنَّةِ إِذْ أَقْسَمُوا لَيَصْرِمُنَّهَا مُصْبِحِينَ</div>
+            <div class="translation-text">Sungguh, Kami telah menguji mereka (orang kafir Mekah) sebagaimana Kami telah menguji pemilik-pemilik kebun, ketika mereka bersumpah bahwa mereka pasti akan memetik (hasil)nya pada pagi hari,</div>
+        </div>
+
+        <!-- Ayat 18 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 18</span>
+            </div>
+            <div class="arabic-text">وَلَا يَسْتَثْنُونَ</div>
+            <div class="translation-text">tetapi mereka tidak menyisihkan (dengan mengucapkan, "Insya Allah").</div>
+        </div>
+
+        <!-- Ayat 19 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 19</span>
+            </div>
+            <div class="arabic-text">فَطَافَ عَلَيْهَا طَائِفٌ مِنْ رَبِّكَ وَهُمْ نَائِمُونَ</div>
+            <div class="translation-text">Lalu kebun itu ditimpa malapetaka (yang datang) dari Tuhanmu ketika mereka sedang tidur,</div>
+        </div>
+
+        <!-- Ayat 20 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 20</span>
+            </div>
+            <div class="arabic-text">فَأَصْبَحَتْ كَالصَّرِيمِ</div>
+            <div class="translation-text">maka jadilah kebun itu hitam seperti malam yang gelap gulita.</div>
+        </div>
+
+        <!-- Ayat 21 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 21</span>
+            </div>
+            <div class="arabic-text">فَتَنَادَوْا مُصْبِحِينَ</div>
+            <div class="translation-text">Lalu pada pagi hari mereka saling memanggil,</div>
+        </div>
+
+        <!-- Ayat 22 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 22</span>
+            </div>
+            <div class="arabic-text">أَنِ اغْدُوا عَلَىٰ حَرْثِكُمْ إِنْ كُنْتُمْ صَارِمِينَ</div>
+            <div class="translation-text">"Pergilah pagi-pagi ke kebunmu jika kamu hendak memetik hasil."</div>
+        </div>
+
+        <!-- Ayat 23 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 23</span>
+            </div>
+            <div class="arabic-text">فَانْطَلَقُوا وَهُمْ يَتَخَافَتُونَ</div>
+            <div class="translation-text">Maka mereka pun berangkat sambil berbisik-bisik,</div>
+        </div>
+
+        <!-- Ayat 24 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 24</span>
+            </div>
+            <div class="arabic-text">أَنْ لَا يَدْخُلَنَّهَا الْيَوْمَ عَلَيْكُمْ مِسْكِينٌ</div>
+            <div class="translation-text">"Pada hari ini jangan sampai ada orang miskin masuk ke dalam kebunmu."</div>
+        </div>
+
+        <!-- Ayat 25 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 25</span>
+            </div>
+            <div class="arabic-text">وَغَدَوْا عَلَىٰ حَرْدٍ قَادِرِينَ</div>
+            <div class="translation-text">Dan berangkatlah mereka pada pagi hari dengan niat menghalangi (orang-orang miskin) padahal mereka mampu (menolongnya).</div>
+        </div>
+
+        <!-- Ayat 26 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 26</span>
+            </div>
+            <div class="arabic-text">فَلَمَّا رَأَوْهَا قَالُوا إِنَّا لَضَالُّونَ</div>
+            <div class="translation-text">Maka ketika mereka melihat kebun itu, mereka berkata, "Sungguh, kita ini benar-orang orang yang sesat,</div>
+        </div>
+
+        <!-- Ayat 27 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 27</span>
+            </div>
+            <div class="arabic-text">بَلْ نَحْنُ مَحْرُومُونَ</div>
+            <div class="translation-text">bahkan kita tidak mendapat hasil apa pun."</div>
+        </div>
+
+        <!-- Ayat 28 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 28</span>
+            </div>
+            <div class="arabic-text">قَالَ أَوْسَطُهُمْ أَلَمْ أَقُلْ لَكُمْ لَوْلَا تُسَبِّحُونَ</div>
+            <div class="translation-text">Berkatalah seorang yang paling bijak di antara mereka, "Bukankah aku telah katakan kepadamu, mengapa kamu tidak bertasbih (kepada Tuhanmu)?"</div>
+        </div>
+
+        <!-- Ayat 29 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 29</span>
+            </div>
+            <div class="arabic-text">قَالُوا سُبْحَانَ رَبِّنَا إِنَّا كُنَّا ظَالِمِينَ</div>
+            <div class="translation-text">Maha Suci Tuhan kami, sungguh kami adalah orang-orang yang zalim."</div>
+        </div>
+
+        <!-- Ayat 30 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 30</span>
+            </div>
+            <div class="arabic-text">فَأَقْبَلَ بَعْضُهُمْ عَلَىٰ بَعْضٍ يَتَلَاوَمُونَ</div>
+            <div class="translation-text">Lalu mereka saling berhadapan dan saling mencela.</div>
+        </div>
+
+        <!-- Ayat 31 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 31</span>
+            </div>
+            <div class="arabic-text">قَالُوا يَا وَيْلَنَا إِنَّا كُنَّا طَاغِينَ</div>
+            <div class="translation-text">Merekam berkata, "Aduh celaka kita! Sesungguhnya kita adalah orang-orang yang melampaui batas.</div>
+        </div>
+
+        <!-- Ayat 32 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 32</span>
+            </div>
+            <div class="arabic-text">عَسَىٰ رَبُّنَا أَنْ يُبْدِلَنَا خَيْرًا مِنْهَا إِنَّا إِلَىٰ رَبِّنَا رَاغِبُونَ</div>
+            <div class="translation-text">Mudah-mudahan Tuhan memberikan ganti kepada kita dengan yang lebih baik daripadanya; sesungguhnya kita mengharapkan ampunan Tuhan kita."</div>
+        </div>
+
+        <!-- Ayat 33 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 33</span>
+            </div>
+            <div class="arabic-text">كَذَٰلِكَ الْعَذَابُ ۖ وَلَعَذَابُ الْآخِرَةِ أَكْبَرُ ۚ لَوْ كَانُوا يَعْلَمُونَ</div>
+            <div class="translation-text">Seperti itulah azab (di dunia). Dan sungguh, azab akhirat lebih besar sekiranya mereka mengetahui.</div>
+        </div>
+
+        <!-- Ayat 34 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 34</span>
+            </div>
+            <div class="arabic-text">إِنَّ لِلْمُتَّقِينَ عِنْدَ رَبِّهِمْ جَنَّاتِ النَّعِيمِ</div>
+            <div class="translation-text">Sungguh, bagi orang-orang yang bertakwa (disediakan) surga yang penuh kenikmatan di sisi Tuhannya.</div>
+        </div>
+
+        <!-- Ayat 35 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 35</span>
+            </div>
+            <div class="arabic-text">أَفَنَجْعَلُ الْمُسْلِمِينَ كَالْمُجْرِمِينَ</div>
+            <div class="translation-text">Apakah patut Kami memperlakukan orang-orang Islam (yang tunduk kepada Allah) itu seperti orang-orang yang berdosa (orang kafir)?</div>
+        </div>
+
+        <!-- Ayat 36 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 36</span>
+            </div>
+            <div class="arabic-text">مَا لَكُمْ كَيْفَ تَحْكُمُونَ</div>
+            <div class="translation-text">Mengapa kamu (berbuat demikian)? Bagaimana kamu mengambil keputusan?</div>
+        </div>
+
+        <!-- Ayat 37 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 37</span>
+            </div>
+            <div class="arabic-text">أَمْ لَكُمْ كِتَابٌ فِيهِ تَدْرُسُونَ</div>
+            <div class="translation-text">Atau apakah kamu mempunyai kitab (yang diturunkan Allah) yang kamu pelajari?</div>
+        </div>
+
+        <!-- Ayat 38 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 38</span>
+            </div>
+            <div class="arabic-text">إِنَّ لَكُمْ فِيهِ لَمَا تَخَيَّرُونَ</div>
+            <div class="translation-text">bahwa di dalamnya kamu benar-benar dapat memilih apa saja yang kamu sukai?</div>
+        </div>
+
+        <!-- Ayat 39 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 39</span>
+            </div>
+            <div class="arabic-text">أَمْ لَكُمْ أَيْمَانٌ عَلَيْنَا بَالِغَةٌ إِلَىٰ يَوْمِ الْقِيَامَةِ ۙ إِنَّ لَكُمْ لَمَا تَحْكُمُونَ</div>
+            <div class="translation-text">Atau apakah kamu memperoleh janji-janji yang diperkuat dengan sumpah dari Kami yang tetap berlaku sampai hari kiamat; bahwa kamu dapat mengambil keputusan (sekehendakmu)?</div>
+        </div>
+
+        <!-- Ayat 40 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 40</span>
+            </div>
+            <div class="arabic-text">سَلْهُمْ أَيُّهُمْ بِذَٰلِكَ زَعِيمٌ</div>
+            <div class="translation-text">Tanyakanlah kepada mereka, "Siapakah di antara mereka yang bertanggung jawab terhadap (klaim) itu?"</div>
+        </div>
+
+        <!-- Ayat 41 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 41</span>
+            </div>
+            <div class="arabic-text">أَمْ لَهُمْ شُرَكَاءُ فَلْيَأْتُوا بِشُرَكَائِهِمْ إِنْ كَانُوا صَادِقِينَ</div>
+            <div class="translation-text">Atau apakah mereka mempunyai sekutu-sekutu? Kalau begitu hendaklah mereka mendatangkan sekutu-sekutunya jika mereka orang-orang yang benar.</div>
+        </div>
+
+        <!-- Ayat 42 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 42</span>
+            </div>
+            <div class="arabic-text">يَوْمَ يُكْشَفُ عَنْ سَاقٍ وَيُدْعَوْنَ إِلَى السُّجُودِ فَلَا يَسْتَطِيعُونَ</div>
+            <div class="translation-text">(Ingatlah) pada hari ketika betis disingkapkan dan mereka dipanggil untuk bersujud, maka mereka tidak sanggup,</div>
+        </div>
+
+        <!-- Ayat 43 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 43</span>
+            </div>
+            <div class="arabic-text">خَاشِعَةً أَبْصَارُهُمْ تَرْهَقُهُمْ ذِلَّةٌ ۖ وَقَدْ كَانُوا يُدْعَوْنَ إِلَى السُّجُودِ وَهُمْ سَالِمُونَ</div>
+            <div class="translation-text">pandangan mereka tertunduk ke bawah, diliputi kehinaan. Dan sungguh, dahulu (di dunia) mereka telah dipanggil untuk bersujud pada saat mereka sehat.</div>
+        </div>
+
+        <!-- Ayat 44 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 44</span>
+            </div>
+            <div class="arabic-text">فَذَرْنِي وَمَنْ يُكَذِّبُ بِهَٰذَا الْحَدِيثِ ۖ سَنَسْتَدْرِجُهُمْ مِنْ حَيْثُ لَا يَعْلَمُونَ</div>
+            <div class="translation-text">Maka serahkanlah kepada-Ku orang-orang yang mendustakan perkataan ini (Al-Qur'an). Kelak Kami akan menarik mereka berangsur-angsur (ke arah kebinasaan) dari arah yang tidak mereka ketahui,</div>
+        </div>
+
+        <!-- Ayat 45 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 45</span>
+            </div>
+            <div class="arabic-text">وَأُمْلِي لَهُمْ ۚ إِنَّ كَيْدِي مَتِينٌ</div>
+            <div class="translation-text">dan Aku memberi tenggang waktu kepada mereka. Sungguh, rencana-Ku sangat tangguh.</div>
+        </div>
+
+        <!-- Ayat 46 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 46</span>
+            </div>
+            <div class="arabic-text">أَمْ تَسْأَلُهُمْ أَجْرًا فَهُمْ مِنْ مَغْرَمٍ مُثْقَلُونَ</div>
+            <div class="translation-text">Atau apakah engkau (Muhammad) meminta imbalan kepada mereka, sehingga mereka dibebani dengan utang?</div>
+        </div>
+
+        <!-- Ayat 47 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 47</span>
+            </div>
+            <div class="arabic-text">أَمْ عِنْدَهُمُ الْغَيْبُ فَهُمْ يَكْتُبُونَ</div>
+            <div class="translation-text">Ataukah mereka mempunyai pengetahuan tentang yang gaib lalu mereka menuliskannya?</div>
+        </div>
+
+        <!-- Ayat 48 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 48</span>
+            </div>
+            <div class="arabic-text">فَاصْبِرْ لِحُكْمِ رَبِّكَ وَلَا تَكُنْ كَصَاحِبِ الْحُوتِ إِذْ نَادَىٰ وَهُوَ مَكْظُومٌ</div>
+            <div class="translation-text">Maka bersabarlah engkau (Muhammad) terhadap ketetapan Tuhanmu, dan janganlah engkau seperti orang yang berada dalam perut ikan (Yunus) ketika dia berdoa dengan hati yang jengkel.</div>
+        </div>
+
+        <!-- Ayat 49 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 49</span>
+            </div>
+            <div class="arabic-text">لَوْلَا أَنْ تَدَارَكَهُ نِعْمَةٌ مِنْ رَبِّهِ لَنُبِذَ بِالْعَرَاءِ وَهُوَ مَذْمُومٌ</div>
+            <div class="translation-text">Sekiranya dia tidak segera mendapat nikmat dari Tuhannya, tentulah dia dilemparkan ke tanah yang tandus dalam keadaan tercela.</div>
+        </div>
+
+        <!-- Ayat 50 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 50</span>
+            </div>
+            <div class="arabic-text">فَاجْتَبَاهُ رَبُّهُ فَجَعَلَهُ مِنَ الصَّالِحِينَ</div>
+            <div class="translation-text">Lalu Tuhannya memilihnya dan menjadikannya termasuk orang-orang yang saleh.</div>
+        </div>
+
+        <!-- Ayat 51 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 51</span>
+            </div>
+            <div class="arabic-text">وَإِنْ يَكَادُ الَّذِينَ كَفَرُوا لَيُزْلِقُونَكَ بِأَبْصَارِهِمْ لَمَّا سَمِعُوا الذِّكْرَ وَيَقُولُونَ إِنَّهُ لَمَجْنُونٌ</div>
+            <div class="translation-text">Dan sungguh, orang-orang kafir itu hampir-hampir menggelincirkanmu dengan pandangan mata mereka, ketika mereka mendengar Al-Qur'an dan mereka berkata, "Sesungguhnya dia (Muhammad) benar-benar orang gila."</div>
+        </div>
+
+        <!-- Ayat 52 -->
+        <div class="verse-card">
+            <div class="verse-header">
+                <span class="surah-title">Al-Qalam</span>
+                <span class="verse-number">Ayat 52</span>
+            </div>
+            <div class="arabic-text">وَمَا هُوَ إِلَّا ذِكْرٌ لِلْعَالَمِينَ</div>
+            <div class="translation-text">Padahal (Al-Qur'an) itu tidak lain adalah peringatan bagi seluruh alam.</div>
+        </div>
+
+    </div>
+
+</body>
+</html>
