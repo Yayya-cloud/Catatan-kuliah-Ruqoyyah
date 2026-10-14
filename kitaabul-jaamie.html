@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulughul Maram - Kitab Al-Jami' (Bab Adab & Birrul Walidain)</title>
+    <!-- Font Arab & Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            background-color: #f7f9f4;
+            margin: 0;
+            padding: 0;
+            color: #2c3527;
+        }
+        
+        /* Banner Header Tema Hijau Olive & Lime */
+        .header-banner {
+            background: linear-gradient(135deg, #556b2f, #3b4a20);
+            color: white;
+            text-align: center;
+            padding: 25px 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            box-shadow: 0 4px 12px rgba(59, 74, 32, 0.2);
+        }
+        .header-banner h1 { margin: 0 0 6px 0; font-size: 22px; font-weight: 700; color: #ecfccb; }
+        .header-banner p { margin: 0; font-size: 13px; opacity: 0.95; }
+        
+        .container { padding: 20px 15px 40px 15px; max-width: 750px; margin: 0 auto; }
+        
+        .btn-wrapper {
+            text-align: left;
+            margin-bottom: 18px;
+            direction: ltr;
+        }
+
+        .btn-back {
+            display: inline-block;
+            color: #4d6027;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            background-color: #ecfccb;
+            padding: 8px 18px;
+            border-radius: 20px;
+            border: 1px solid #d9f99d;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.04);
+            transition: all 0.2s;
+        }
+        .btn-back:active { transform: scale(0.97); }
+
+        /* Banner Judul Bab */
+        .bab-divider {
+            background: linear-gradient(135deg, #657e33, #4d6027);
+            color: #f7fee7;
+            padding: 16px 20px;
+            border-radius: 12px;
+            margin: 30px 0 20px 0;
+            box-shadow: 0 3px 8px rgba(77, 96, 39, 0.15);
+            border-left: 6px solid #a3e635;
+        }
+        .bab-divider h2 { margin: 0; font-size: 17px; font-weight: 700; }
+        .bab-divider p { margin: 4px 0 0 0; font-size: 12.5px; color: #d9f99d; }
+
+        .hadits-card {
+            background-color: #ffffff;
+            border: 1.5px solid #e2ebd0;
+            border-radius: 14px;
+            padding: 20px 18px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(85, 107, 47, 0.05);
+        }
+
+        .hadits-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 14px;
+            border-bottom: 1px dashed #d9f99d;
+            padding-bottom: 10px;
+        }
+
+        .hadits-title {
+            font-size: 15px;
+            font-weight: 700;
+            color: #3b4a20;
+        }
+
+        .hadits-number {
+            background-color: #ecfccb;
+            color: #3b4a20;
+            font-weight: 700;
+            font-size: 12px;
+            padding: 4px 12px;
+            border-radius: 20px;
+            border: 1px solid #d9f99d;
+        }
+
+        .arabic-text {
+            font-family: 'Amiri', serif;
+            font-size: 23px;
+            line-height: 2.2;
+            text-align: right;
+            direction: rtl;
+            color: #1a2315;
+            margin-bottom: 14px;
+            word-spacing: 2px;
+        }
+
+        .translation-text {
+            font-size: 13.5px;
+            line-height: 1.65;
+            color: #3a4533;
+            text-align: left;
+            margin-bottom: 12px;
+        }
+
+        .rawi-badge {
+            display: inline-block;
+            background-color: #f7fee7;
+            color: #4d6027;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 6px 12px;
+            border-radius: 8px;
+            border: 1px solid #e2ebd0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-banner">
+        <h1>📚 Bulughul Maram - Kitab Al-Jami'</h1>
+        <p>Bab Adab dan Bab Berbakti & Menyambung Silaturahim</p>
+    </div>
+
+    <div class="container">
+        <!-- Tombol Kembali -->
+        <div class="btn-wrapper">
+            <a href="javascript:history.back()" class="btn-back">← Kembali ke Daftar Hadits</a>
+        </div>
+
+        <!-- ==================== BAB 1: BAB AL-ADAB ==================== -->
+        <div class="bab-divider">
+            <h2>BAB 1: BAB AL-ADAB (بَابُ الْأَدَبِ)</h2>
+            <p>Adab dan Etika Sehari-hari (Hadis No. 1 - 16 | Bulughul Maram No. 1452 - 1467)</p>
+        </div>
+
+        <!-- Hadits 1 -->
+        <div class="hadits-card">
+            <div class="hadits-header">
+                <span class="hadits-title">Hak Seorang Muslim atas Muslim Lainnya</span>
+                <span class="hadits-number">Hadis 1 / 1452</span>
+            </div>
+            <div class="arabic-text">
+                عَنْ أَبِي هُرَيْرَةَ رَضِيَ اللَّهُ عَنْهُ قَالَ: قَالَ رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ: «حَقُّ الْمُسْلِمِ عَلَى الْمُسْلِمِ سِتٌّ: إِذَا لَقِيتَهُ فَسَلِّمْ عَلَيْهِ، وَإِذَا دَعَاكَ فَأَجِبْهُ، وَإِذَا اسْتَنْصَحَكَ فَانْصَحْ لَهُ، وَإِذَا عَطَسَ فَحَمِدَ اللَّهَ فَشَمِّتْهُ، وَإِذَا مَرِضَ فَعُدْهُ، وَإِذَا مَاتَ فَاتَّبِعْهُ».
+            </div>
+            <div class="translation-text">
+                Dari Abu Hurairah <i>radhiyallahu 'anhu</i>, Rasulullah <i>shallallahu 'alaihi wa sallam</i> bersabda: "Hak seorang muslim atas muslim lainnya ada enam: Apabila engkau bertemunya maka ucapkanlah salam kepadanya, apabila dia mengundangmu maka penuhilah undatannya, apabila dia meminta nasihat kepadamu maka berilah nasihat kepadanya, apabila dia bersin lalu mengucapkan 'Alhamdulillah' maka mendoakannya (ucapkan 'Yarhamukallah'), apabila dia sakit maka jenguklah dia, dan apabila dia meninggal dunia maka hantarkanlah jenazahnya."
+            </div>
+            <div class="rawi-badge">
+                📖 Diriwayatkan oleh Muslim (HR. Muslim No. 2162)
+            </div>
+        </div>
+
+        <!-- Hadits 2 -->
+        <div class="hadits-card">
+            <div class="hadits-header">
+                <span class="hadits-title">Melihat Orang yang Lebih Rendah dalam Urusan Dunia</span>
+                <span class="hadits-number">Hadis 2 / 1453</span>
+            </div>
+            <div class="arabic-text">
+                وَعَنْهُ قَالَ: قَالَ رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ: «انْظُرُوا إِلَى مَنْ هُوَ أَسْفَلَ مِنْكُمْ، وَلَا تَنْظُرُوا إِلَى مَنْ هُوَ فَوْقَكُمْ، فَهُوَ أَجْدَرُ أَنْ لَا تَزْدَرُوا نِعْمَةَ اللَّهِ عَلَيْكُمْ».
+            </div>
+            <div class="translation-text">
+                Dari Abu Hurairah <i>radhiyallahu 'anhu</i>, Rasulullah <i>shallallahu 'alaihi wa sallam</i> bersabda: "Lihatlah kepada orang yang berada di bawahmu (dalam masalah dunia) dan janganlah melihat kepada orang yang berada di atasmu, karena hal itu lebih layak agar engkau tidak meremehkan nikmat Allah kepadamu."
+            </div>
+            <div class="rawi-badge">
+                📖 Muttafaqun 'Alaih (HR. Bukhari No. 6490, Muslim No. 2963)
+            </div>
+        </div>
+
+        <!-- Hadits 3 -->
+        <div class="hadits-card">
+            <div class="hadits-header">
+                <span class="hadits-title">Anjuran Bertanya Kepada Ahlul 'Ilmi</span>
+                <span class="hadits-number">Hadis 3 / 1454</span>
+            </div>
+            <div class="arabic-text">
+                وَعَنْ النَّوَاسِ بْنِ سَمْعَانَ رَضِيَ اللَّهُ عَنْهُ قَالَ: سَأَلْتُ رَسُولَ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ عَنِ الْبِرِّ وَالْإِثْمِ؟ فَقَالَ: «الْبِرُّ حُسْنُ الْخُلُقِ، وَالْإِثْمُ مَا حَاكَ فِي صَدْرِكَ، وَكَرِهْتَ أَنْ يَطَّلِعَ عَلَيْهِ النَّاسُ».
+            </div>
+            <div class="translation-text">
+                Dari An-Nawwas bin Sam'an <i>radhiyallahu 'anhu</i> berkata: Aku bertanya kepada Rasulullah <i>shallallahu 'alaihi wa sallam</i> tentang kebaikan dan dosa, lalu beliau bersabda: "Kebaikan itu adalah akhlak yang mulia, sedangkan dosa adalah apa yang meragukan/mengganjal di dalam dadamu dan engkau benci jika hal itu diketahui oleh manusia."
+            </div>
+            <div class="rawi-badge">
+                📖 Diriwayatkan oleh Muslim (HR. Muslim No. 2553)
+            </div>
+        </div>
+
+        <!-- Hadits 4 -->
+        <div class="hadits-card">
+            <div class="hadits-header">
+                <span class="hadits-title">Ruh-Ruh Itu Seperti Pasukan yang Terekrut</span>
+                <span class="hadits-number">Hadis 4 / 1455</span>
+            </div>
+            <div class="arabic-text">
+                وَعَنْ ابْنِ مَسْعُودٍ رَضِيَ اللَّهُ عَنْهُ قَالَ: قَالَ رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ: «إِذَا كُنْتُمْ ثَلَاثَةً فَلَا يَتَنَاجَى اثْنَانِ دُونَ الآخَرِ، حَتَّى تَخْتَلِطُوا بِالنَّاسِ؛ مِنْ أَجْلِ أَنَّ ذَلِكَ يُحْزِنُهُ».
+            </div>
+            <div class="translation-text">
+                Dari Ibn Mas'ud <i>radhiyallahu 'anhu</i> berkata: Rasulullah <i>shallallahu 'alaihi wa sallam</i> bersabda: "Jika kalian bertiga, maka janganlah dua orang berbisik-bisik tanpa mengikutkan orang ketiga sampai kalian berbaur dengan manusia, karena hal itu dapat membuatnya sedih."
+            </div>
+            <div class="rawi-badge">
+                📖 Muttafaqun 'Alaih (HR. Bukhari No. 6290, Muslim No. 2184)
+            </div>
+        </div>
+
+        <!-- Hadits 5 -->
+        <div class="hadits-card">
+            <div class="hadits-header">
+                <span class="hadits-title">Adab Meminta Izin</span>
+                <span class="hadits-number">Hadis 5 / 1456</span>
+            </div>
+            <div class="arabic-text">
+                وَعَنْ ابْنِ عُمَرَ رَضِيَ اللَّهُ عَنْهُمَا قَالَ: قَالَ رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ: «لَا يُقِيمُ الرَّجُلُ الرَّجُلَ مِنْ مَجْلِسِهِ ثُمَّ يَجْلِسُ فِيهِ، وَلَكِنْ تَفَسَّحُوا وَتَوَسَّعُوا».
+            </div>
+            <div class="translation-text">
+                Dari Ibn 'Umar <i>radhiyallahu 'anhuma</i> berkata: Rasulullah <i>shallallahu 'alaihi wa sallam</i> bersabda: "Janganlah seseorang menyuruh berdiri orang lain dari tempat duduknya kemudian ia duduk di tempat tersebut, akan tetapi berilah kelapangan dan perluaslah tempat duduk kalian."
+            </div>
+            <div class="rawi-badge">
+                📖 Muttafaqun 'Alaih (HR. Bukhari No. 6269, Muslim No. 2177)
+            </div>
+        </div>
+
+        <!-- Hadits 6 -->
+        <div class="hadits-card">
+            <div class="hadits-header">
+                <span class="hadits-title">Adab Makan dengan Tangan Kanan</span>
+                <span class="hadits-number">Hadis 6 / 1457</span>
+            </div>
+            <div class="arabic-text">
+                وَعَنْ ابْنِ عَبَّاسٍ رَضِيَ اللَّهُ عَنْهُمَا قَالَ: قَالَ رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ: «إِذَا أَكَلَ أَحَدُكُمْ طَعَامًا فَلَا يَمْسَحْ يَدَهُ حَتَّى يَلْعَقَهَا أَوْ يُلْعِقَهَا».
+            </div>
+            <div class="translation-text">
+                Dari Ibn 'Abbas <i>radhiyallahu 'anhuma</i> berkata: Rasulullah <i>shallallahu 'alaihi wa sallam</i> bersabda: "Apabila salah seorang di antara kamu makan makanan, maka janganlah ia mengusap tangannya (dengan kain/tisu) sebelum ia menjilatinya atau meminta orang lain untuk menjilatinya."
+            </div>
+            <div class="rawi-badge">
+                📖 Muttafaqun 'Alaih (HR. Bukhari No. 5456, Muslim No. 2031)
+            </div>
+        </div>
+
+        <!-- Hadits 7 -->
+        <div class="hadits-card">
+            <div class="hadits-header">
+                <span class="hadits-title">Mendahulukan Sebelah Kanan saat Memakai Sandal</span>
+                <span class="hadits-number">Hadis 7 / 1458</span>
+            </div>
+            <div class="arabic-text">
+                وَعَنْ أَبِي هُرَيْرَةَ رَضِيَ اللَّهُ عَنْهُ قَالَ: قَالَ رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ: «لِيُسَلِّمِ الرَّاكِبُ عَلَى المَاشِي، وَالمَاشِي عَلَى القَاعِدِ، وَالقَلِيلُ عَلَى الكَثِيرِ».
+            </div>
+            <div class="translation-text">
+                Dari Abu Hurairah <i>radhiyallahu 'anhu</i> berkata: Rasulullah <i>shallallahu 'alaihi wa sallam</i> bersabda: "Hendaklah orang yang berkendara mengucapkan salam kepada orang yang berjalan kaki, orang yang berjalan kaki kepada orang yang duduk, dan kelompok yang sedikit kepada kelompok yang banyak."
+            </div>
+            <div class="rawi-badge">
+                📖 Muttafaqun 'Alaih (HR. Bukhari No. 6232, Muslim No. 2160)
+            </div>
+        </div>
+
+        <!-- Hadits 8 -->
+        <div class="hadits-card">
+            <div class="hadits-header">
+                <span class="hadits-title">Mengucapkan Salam Kepada Anak-Anak</span>
+                <span class="hadits-number">Hadis 8 / 1459</span>
+            </div>
+            <div class="arabic-text">
+                وَعَنْ أَنَسٍ رَضِيَ اللَّهُ عَنْهُ: أَنَّهُ مَرَّ عَلَى صِبْيَانٍ فَسَلَّمَ عَلَيْهِمْ، وَقَالَ: كَانَ رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ يَفْعَلُهُ.
+            </div>
+            <div class="translation-text">
+                Dari Anas <i>radhiyallahu 'anhu</i>: Bahwasanya ia melewati anak-anak kecil lalu ia mengucapkan salam kepada mereka, dan berkata: "Rasulullah <i>shallallahu 'alaihi wa sallam</i> dahulu senantiasa melakukan hal ini."
+            </div>
+            <div class="rawi-badge">
+                📖 Muttafaqun 'Alaih (HR. Bukhari No. 6247, Muslim No. 2168)
+            </div>
+        </div>
+
+        <!-- Hadits 9 -->
+        <div class="hadits-card">
+            <div class="hadits-header">
+                <span class="hadits-title">Menjawab Salam Orang Ahli Kitab</span>
+                <span class="hadits-number">Hadis 9 / 1460</span>
+            </div>
+            <div class="arabic-text">
+                وَعَنْهُ قَالَ: قَالَ رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ: «إِذَا سَلَّمَ عَلَيْكُمْ أَهْلُ الْكِتَابِ فَقُولُوا: وَعَلَيْكُمْ».
+            </div>
+            <div class="translation-text">
+                Dari Anas <i>radhiyallahu 'anhu</i> berkata: Rasulullah <i>shallallahu 'alaihi wa sallam</i> bersabda: "Apabila Ahli Kitab mengucapkan salam kepada kalian, maka ucapkanlah: 'Wa 'alaikum' (Dan atas kalian juga)."
+            </div>
+            <div class="rawi-badge">
+                📖 Muttafaqun 'Alaih (HR. Bukhari No. 6258, Muslim No. 2163)
+            </div>
+        </div>
+
+        <!-- Hadits 10 -->
+        <div class="hadits-card">
+            <div class="hadits-header">
+                <span class="hadits-title">Adab Bersin dan Menguap</span>
+                <span class="hadits-number">Hadis 10 / 1461</span>
+            </div>
+            <div class="arabic-text">
+                وَعَنْ أَبِي هُرَيْرَةَ رَضِيَ اللَّهُ عَنْهُ قَالَ: قَالَ رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ: «العُطَاسُ مِنَ اللَّهِ، وَالتَّشَاؤُبُ مِنَ الشَّيْطَانِ، فَإِذَا تَشَاءَبَ أَحَدُكُمْ فَلْيَضَعْ يَدَهُ عَلَى فِيهِ».
+            </div>
+            <div class="translation-text">
+                Dari Abu Hurairah <i>radhiyallahu 'anhu</i> berkata: Rasulullah <i>shallallahu 'alaihi wa sallam</i> bersabda: "Bersin itu datangnya dari Allah, sedangkan menguap itu dari setan. Maka apabila salah seorang di antara kalian menguap, hendaklah ia menutupi mulutnya dengan tangannya."
+            </div>
+            <div class="rawi-badge">
+                📖 Diriwayatkan oleh Tirmidzi (HR. Tirmidzi No. 2746)
+            </div>
+        </div>
+
+        <!-- Hadits 11 -->
+        <div class="hadits-card">
+            <div class="hadits-header">
+                <span class="hadits-title">Meminum dengan Tangan Kanan</span>
+                <span class="hadits-number">Hadis 11 / 1462</span>
+            </div>
+            <div class="arabic-text">
+                وَعَنْ أَبِي قَتَادَةَ رَضِيَ اللَّهُ عَنْهُ: أَنَّ النَّبِيَّ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ نَهَى أَنْ يَتَنَفَّسَ فِي الإِنَاءِ.
+            </div>
+            <div class="translation-text">
+                Dari Abu Qatadah <i>radhiyallahu 'anhu</i>: Bahwasanya Nabi <i>shallallahu 'alaihi wa sallam</i> melarang bernapas di dalam bejana (wadah air minum).
+            </div>
+            <div class="rawi-badge">
+                📖 Muttafaqun 'Alaih (HR. Bukhari No. 153, Muslim No. 267)
+            </div>
+        </div>
+
+        <!-- Hadits 12 -->
+        <div class="hadits-card">
+            <div class="hadits-header">
+                <span class="hadits-title">Memakai Sandal Memakai Tangan Kanan</span>
+                <span class="hadits-number">Hadis 12 / 1463</span>
+            </div>
+            <div class="arabic-text">
+                وَعَنْ أَبِي هُرَيْرَةَ رَضِيَ اللَّهُ عَنْهُ قَالَ: قَالَ رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ: «إِذَا انْتَعَلَ أَحَدُكُمْ فَلْيَبْدَأْ بِاليَمِينِ، وَإِذَا نَزَعَ فَلْيَبْدَأْ بِالشِّمَالِ، لِتَكُنِ اليُمْنَى أَوَّلَهُمَا تُنْعَلُ وَآخِرَهُمَا تُنْزَعُ».
+            </div>
+            <div class="translation-text">
+                Dari Abu Hurairah <i>radhiyallahu 'anhu</i> berkata: Rasulullah <i>shallallahu 'alaihi wa sallam</i> bersabda: "Apabila salah seorang di antara kamu memakai sandal maka mulailah dengan kaki kanan, dan apabila melepasnya maka mulailah dengan kaki kiri, agar kaki kanan menjadi yang pertama dipakai dan yang terakhir dilepas."
+            </div>
+            <div class="rawi-badge">
+                📖 Muttafaqun 'Alaih (HR. Bukhari No. 5855, Muslim No. 2097)
+            </div>
+        </div>
+
+        <!-- Hadits 13 -->
+        <div class="hadits-card">
+            <div class="hadits-header">
+                <span class="hadits-title">Melarang Berjalan dengan Satu Sandal</span>
+                <span class="hadits-number">Hadis 13 / 1464</span>
+            </div>
+            <div class="arabic-text">
+                وَعَنْهُ قَالَ: قَالَ رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ: «لَا يَمْشِ أَحَدُكُمْ فِي نَعْلٍ وَاحِدَةٍ، لِيُنْعِلْهُمَا جَمِيعًا أَوْ لِيَخْلَعْهُمَا جَمِيعًا».
+            </div>
+            <div class="translation-text">
+                Dari Abu Hurairah <i>radhiyallahu 'anhu</i> berkata: Rasulullah <i>shallallahu 'alaihi wa sallam</i> bersabda: "Janganlah salah seorang di antara kamu berjalan memakai satu sandal saja, hendaklah ia memakai keduanya sekaligus atau melepas keduanya sekaligus."
+            </div>
+            <div class="rawi-badge">
+                📖 Muttafaqun 'Alaih (HR. Bukhari No. 5855, Muslim No. 2097)
+            </div>
+        </div>
+
+        <!-- Hadits 14 -->
+        <div class="hadits-card">
+            <div class="hadits-header">
+                <span class="hadits-title">Larangan Berpaling Saat Berbicara</span>
+                <span class="hadits-number">Hadis 14 / 1465</span>
+            </div>
+            <div class="arabic-text">
+                وَعَنْ ابْنِ عُمَرَ رَضِيَ اللَّهُ عَنْهُمَا: أَنَّ رَسُولَ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ نَهَى أَنْ يَمْشِيَ الرَّجُلُ بَيْنَ المَرْأَتَيْنِ.
+            </div>
+            <div class="translation-text">
+                Dari Ibn 'Umar <i>radhiyallahu 'anhuma</i>: Bahwasanya Rasulullah <i>shallallahu 'alaihi wa sallam</i> melarang seorang laki-laki berjalan di antara dua orang wanita.
+            </div>
+            <div class="rawi-badge">
+                📖 Diriwayatkan oleh Abu Dawud (HR. Abu Dawud No. 5273)
+            </div>
+        </div>
+
+        <!-- Hadits 15 -->
+        <div class="hadits-card">
+            <div class="hadits-header">
+                <span class="hadits-title">Menggunakan Pakaian yang Bersih</span>
+                <span class="hadits-number">Hadis 15 / 1466</span>
+            </div>
+            <div class="arabic-text">
+                وَعَنْ أَبِي سَعِيدٍ الخُدْرِيِّ رَضِيَ اللَّهُ عَنْهُ قَالَ: قَالَ رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ: «إِزْرَةُ المُسْلِمِ إِلَى نِصْفِ السَّاقِ، وَلَا حَرَجَ - أَوْ لَا جُنَاحَ - فِيمَا بَيْنَهُ وَبَيْنَ الكَعْبَيْنِ، فَمَا كَانَ أَسْفَلَ مِنَ الكَعْبَيْنِ فَهُوَ فِي النَّارِ».
+            </div>
+            <div class="translation-text">
+                Dari Abu Sa'id Al-Khudri <i>radhiyallahu 'anhu</i> berkata: Rasulullah <i>shallallahu 'alaihi wa sallam</i> bersabda: "Pakaian sarung seorang muslim itu hingga pertengahan betis, dan tidak dosa—atau tidak mengapa—apa yang ada di antara betis hingga kedua mata kaki. Adapun yang berada di bawah kedua mata kaki maka tempatnya di neraka."
+            </div>
+            <div class="rawi-badge">
+                📖 Diriwayatkan oleh Abu Dawud (HR. Abu Dawud No. 4093)
+            </div>
+        </div>
+
+        <!-- Hadits 16 -->
+        <div class="hadits-card">
+            <div class="hadits-header">
+                <span class="hadits-title">Keutamaan Menyingkirkan Duri dari Jalan</span>
+                <span class="hadits-number">Hadis 16 / 1467</span>
+            </div>
+            <div class="arabic-text">
+                وَعَنْ أَبِي هُرَيْرَةَ رَضِيَ اللَّهُ عَنْهُ قَالَ: قَالَ رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ: «بَيْنَمَا رَجُلٌ يَمْشِي بِطَرِيقٍ وَجَدَ غُصْنَ شَوْكٍ عَلَى الطَّرِيقِ فَأَخَّرَهُ، فَشَكَرَ اللَّهُ لَهُ فَغَفَرَ لَهُ».
+            </div>
+            <div class="translation-text">
+                Dari Abu Hurairah <i>radhiyallahu 'anhu</i> berkata: Rasulullah <i>shallallahu 'alaihi wa sallam</i> bersabda: "Ketika ada seorang laki-laki berjalan di suatu jalan, ia menemukan dahan berduri di jalanan lalu ia menyingkirkannya. Maka Allah berterima kasih kepadanya dan mengampuni dosanya."
+            </div>
+            <div class="rawi-badge">
+                📖 Muttafaqun 'Alaih (HR. Bukhari No. 652, Muslim No. 1914)
+            </div>
+        </div>
+
+
+        <!-- ==================== BAB 2: BAB AL-BIRR WASH-SHILAH ==================== -->
+        <div class="bab-divider">
+            <h2>BAB 2: BAB AL-BIRR WASH-SHILAH (بَابُ الْبِرِّ وَالصِّلَةِ)</h2>
+            <p>Berbakti dan Menyambung Silaturahim (Hadis No. 17 - 30 | Bulughul Maram No. 1468 - 1481)</p>
+        </div>
+
+        <!-- Hadits 17 -->
+        <div class="hadits-card">
+            <div class="hadits-header">
+                <span class="hadits-title">Keutamaan Berbakti Kepada Ibu</span>
+                <span class="hadits-number">Hadis 17 / 1468</span>
+            </div>
+            <div class="arabic-text">
+                عَنْ أَبِي هُرَيْرَةَ رَضِيَ اللَّهُ عَنْهُ قَالَ: جَاءَ رَجُلٌ إِلَى رَسُولِ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ فَقَالَ: يَا رَسُولَ اللَّهِ، مَنْ أَحَقُّ النَّاسِ بِحُسْنِ صَحَابَتِي؟ قَالَ: «أُمُّكَ»، قَالَ: ثُمَّ مَنْ؟ قَالَ: «أُمُّكَ»، قَالَ: ثُمَّ مَنْ؟ قَالَ: «أُمُّكَ»، قَالَ: ثُمَّ مَنْ؟ قَالَ: «أَبُوكَ».
+            </div>
+            <div class="translation-text">
+                Dari Abu Hurairah <i>radhiyallahu 'anhu</i> berkata: Datang seorang laki-laki kepada Rasulullah <i>shallallahu 'alaihi wa sallam</i> lalu bertanya: "Wahai Rasulullah, siapakah orang yang paling berhak mendapatkan perlakuan baik dariku?" Beliau menjawab: "Ibumu." Orang itu bertanya lagi: "Kemudian siapa?" Beliau menjawab: "Ibumu." Orang itu bertanya lagi: "Kemudian siapa?" Beliau menjawab: "Ibumu." Orang itu bertanya lagi: "Kemudian siapa?" Beliau menjawab: "Ayahmu."
+            </div>
+            <div class="rawi-badge">
+                📖 Muttafaqun 'Alaih (HR. Bukhari No. 5971, Muslim No. 2548)
+            </div>
+        </div>
+
+        <!-- Hadits 18 -->
+        <div class="hadits-card">
+            <div class="hadits-header">
+                <span class="hadits-title">Ancaman Mendurhakai Kedua Orang Tua</span>
+                <span class="hadits-number">Hadis 18 / 1469</span>
+            </div>
+            <div class="arabic-text">
+                وَعَنْ أَبِي بَكْرَةَ رَضِيَ اللَّهُ عَنْهُ قَالَ: قَالَ رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ: «أَلَا أُنَبِّئُكُمْ بِأَكْبَرِ الكَبَائِرِ؟» ثَلَاثًا، قَالُوا: بَلَى يَا رَسُولَ اللَّهِ، قَالَ: «الإِشْرَاكُ بِاللَّهِ، وَعُقُوقُ الوَالِدَيْنِ»، وَكَانَ مُتَّكِئًا فَجَلَسَ، فَقَالَ: «أَلَا وَقَوْلُ الزُّورِ وَشَهَادَةُ الزُّورِ».
+            </div>
+            <div class="translation-text">
+                Dari Abu Bakrah <i>radhiyallahu 'anhu</i> berkata: Rasulullah <i>shallallahu 'alaihi wa sallam</i> bersabda: "Maukah aku beritahukan kepada kalian dosa-dosa besar yang paling besar?" Beliau mengulanginya tiga kali. Para sahabat menjawab: "Tentu, wahai Rasulullah." Beliau bersabda: "Menyekutukan Allah dan durhaka kepada kedua orang tua." Tadinya beliau bersandar lalu duduk seraya bersabda: "Ketahuilah, termasuk juga perkataan dustا dan kesaksian palsu."
+            </div>
+            <div class="rawi-badge">
+                📖 Muttafaqun 'Alaih (HR. Bukhari No. 2654, Muslim No. 87)
+            </div>
+        </div>
+
+        <!-- Hadits 19 -->
+        <div class="hadits-card">
+            <div class="hadits-header">
+                <span class="hadits-title">Silaturahim Memperpanjang Umur dan Rezeki</span>
+                <span class="hadits-number">Hadis 19 / 1470</span>
+            </div>
+            <div class="arabic-text">
+                وَعَنْ أَنَسٍ رَضِيَ اللَّهُ عَنْهُ قَالَ: قَالَ رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ: «مَنْ أَحَبَّ أَنْ يُبْسَطَ لَهُ فِي رِزْقِهِ، وَيُنْسَأَ لَهُ فِي أَثَرِهِ، فَلْيَصِلْ رَحِمَهُ».
+            </div>
+            <div class="translation-text">
+                Dari Anas <i>radhiyallahu 'anhu</i> berkata: Rasulullah <i>shallallahu 'alaihi wa sallam</i> bersabda: "Barangsiapa yang ingin dilapangkan rezekinya dan dipanjangkan umurnya (dikenang kebaikannya), maka hendaklah ia menyambung tali silaturahim."
+            </div>
+            <div class="rawi-badge">
+                📖 Muttafaqun 'Alaih (HR. Bukhari No. 2067, Muslim No. 2557)
+            </div>
+        </div>
+
+        <!-- Hadits 20 -->
+        <div class="hadits-card">
+            <div class="hadits-header">
+                <span class="hadits-title">Ancaman Memutus Tali Silaturahim</span>
+                <span class="hadits-number">Hadis 20 / 1471</span>
+            </div>
+            <div class="arabic-text">
+                وَعَنْ جُبَيْرِ بْنِ مُطْعِمٍ رَضِيَ اللَّهُ عَنْهُ قَالَ: قَالَ رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ: «لَا يَدْخُلُ الجَنَّةَ قَاطِعٌ» يَعْنِي: قَاطِعَ رَحِمٍ.
+            </div>
+            <div class="translation-text">
+                Dari Jubair bin Muth'im <i>radhiyallahu 'anhu</i> berkata: Rasulullah <i>shallallahu 'alaihi wa sallam</i> bersabda: "Tidak akan masuk surga orang yang memutuskan," yaitu orang yang memutuskan tali silaturahim.
+            </div>
+            <div class="rawi-badge">
+                📖 Muttafaqun 'Alaih (HR. Bukhari No. 5984, Muslim No. 2556)
+            </div>
+        </div>
+
+        <!-- Hadits 21 -->
+        <div class="hadits-card">
+            <div class="hadits-header">
+                <span class="hadits-title">Menyambung Silaturahim Kepada yang Memutuskannya</span>
+                <span class="hadits-number">Hadis 21 / 1472</span>
+            </div>
+            <div class="arabic-text">
+                وَعَنْ عَبْدِ اللَّهِ بْنِ عَمْرٍو رَضِيَ اللَّهُ عَنْهُمَا عَنِ النَّبِيِّ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ قَالَ: «لَيْسَ المَوَاصِلُ بِالمُكَافِئِ، وَلَكِنِ المَوَاصِلُ الَّذِي إِذَا قُطِعَتْ رَحِمُهُ وَصَلَهَا».
+            </div>
+            <div class="translation-text">
+                Dari 'Abdullah bin 'Amr <i>radhiyallahu 'anhuma</i> dari Nabi <i>shallallahu 'alaihi wa sallam</i> beliau bersabda: "Bukanlah orang yang menyambung silaturahim itu adalah orang yang membalas kebaikan orang lain, akan tetapi orang yang menyambung silaturahim adalah orang yang apabila tali silaturahimnya diputuskan, ia menyambungnya kembali."
+            </div>
+            <div class="rawi-badge">
+                📖 Diriwayatkan oleh Al-Bukhari (HR. Bukhari No. 5991)
+            </div>
+        </div>
+
+        <!-- Hadits 22 -->
+        <div class="hadits-card">
+            <div class="hadits-header">
+                <span class="hadits-title">Berbuat Baik Kepada Tetangga</span>
+                <span class="hadits-number">Hadis 22 / 1473</span>
+            </div>
+            <div class="arabic-text">
+                وَعَنْ عَاكِشَةَ رَضِيَ اللَّهُ عَنْهَا قَالَتْ: قَالَ رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ: «مَا زَالَ جِبْرِيلُ يُوصِينِي بِالْجَارِ حَتَّى ظَنَنْتُ أَنَّهُ سَيُوَرِّثُهُ».
+            </div>
+            <div class="translation-text">
+                Dari Aisyah <i>radhiyallahu 'anha</i> berkata: Rasulullah <i>shallallahu 'alaihi wa sallam</i> bersabda: "Jibril senantiasa berwasiat kepadaku untuk berbuat baik kepada tetangga hingga aku mengira bahwasanya ia akan menjadikan tetangga mendapat bagian warisan."
+            </div>
+            <div class="rawi-badge">
+                📖 Muttafaqun 'Alaih (HR. Bukhari No. 6014, Muslim No. 2624)
+            </div>
+        </div>
+
+        <!-- Hadits 23 -->
+        <div class="hadits-card">
+            <div class="hadits-header">
+                <span class="hadits-title">Mencintai Sesuatu untuk Saudaranya</span>
+                <span class="hadits-number">Hadis 23 / 1474</span>
+            </div>
+            <div class="arabic-text">
+                وَعَنْ أَنَسٍ رَضِيَ اللَّهُ عَنْهُ عَنِ النَّبِيِّ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ قَالَ: «لَا يُؤْمِنُ أَحَدُكُمْ حَتَّى يُحِبَّ لِأَخِيهِ مَا يُحِبُّ لِنَفْسِهِ».
+            </div>
+            <div class="translation-text">
+                Dari Anas <i>radhiyallahu 'anhu</i> dari Nabi <i>shallallahu 'alaihi wa sallam</i> beliau bersabda: "Tidak beriman (dengan sempurna) salah seorang di antara kamu hingga ia mencintai untuk saudaranya apa yang ia cintai untuk dirinya sendiri."
+            </div>
+            <div class="rawi-badge">
+                📖 Muttafaqun 'Alaih (HR. Bukhari No. 13, Muslim No. 45)
+            </div>
+        </div>
+
+        <!-- Hadits 24 -->
+        <div class="hadits-card">
+            <div class="hadits-header">
+                <span class="hadits-title">Larangan Mendiamkan Saudara Lebih dari Tiga Hari</span>
+                <span class="hadits-number">Hadis 24 / 1475</span>
+            </div>
+            <div class="arabic-text">
+                وَعَنْ أَبِي أَيُّوبَ رَضِيَ اللَّهُ عَنْهُ قَالَ: قَالَ رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ: «لَا يَحِلُّ لِمُسْلِمٍ أَنْ يَهْجُرَ أَخَاهُ فَوْقَ ثَلَاثِ لَيَالٍ؛ يَلْتَقِيَانِ فَيُعْرِضُ هَذَا وَيُعْرِضُ هَذَا، وَخَيْرُهُمَا الَّذِي يَبْدَأُ بِالسَّلَامِ».
+            </div>
+            <div class="translation-text">
+                Dari Abu Ayyub <i>radhiyallahu 'anhu</i> berkata: Rasulullah <i>shallallahu 'alaihi wa sallam</i> bersabda: "Tidak halal bagi seorang muslim mendiamkan (tidak menyapa) saudaranya lebih dari tiga malam, keduanya bertemu lalu yang ini berpaling dan yang itu berpaling, dan yang terbaik di antara keduanya adalah yang memulai mengucapkan salam."
+            </div>
+            <div class="rawi-badge">
+                📖 Muttafaqun 'Alaih (HR. Bukhari No. 6077, Muslim No. 2560)
+            </div>
+        </div>
+
+        <!-- Hadits 25 -->
+        <div class="hadits-card">
+            <div class="hadits-header">
+                <span class="hadits-title">Larangan Saling Membenci dan Mendengki</span>
+                <span class="hadits-number">Hadis 25 / 1476</span>
+            </div>
+            <div class="arabic-text">
+                وَعَنْ أَبِي هُرَيْرَةَ رَضِيَ اللَّهُ عَنْهُ قَالَ: قَالَ رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ: «لَا تَبَاغَضُوا، وَلَا تَحَاسَدُوا، وَلَا تَدَابَرُوا، وَكُونُوا عِبَادَ اللَّهِ إِخْوَانًا، وَلَا يَحِلُّ لِمُسْلِمٍ أَنْ يَهْجُرَ أَخَاهُ فَوْقَ ثَلَاثَةِ أَيَّامٍ».
+            </div>
+            <div class="translation-text">
+                Dari Abu Hurairah <i>radhiyallahu 'anhu</i> berkata: Rasulullah <i>shallallahu 'alaihi wa sallam</i> bersabda: "Janganlah kalian saling membenci, janganlah saling mendengki, dan janganlah saling membelakangi (mencari kesalahan), dan jadilah kalian hamba-hamba Allah yang bersaudara. Dan tidak halal bagi seorang muslim mendiamkan saudaranya lebih dari tiga hari."
+            </div>
+            <div class="rawi-badge">
+                📖 Muttafaqun 'Alaih (HR. Bukhari No. 6065, Muslim No. 2559)
+            </div>
+        </div>
+
+        <!-- Hadits 26 -->
+        <div class="hadits-card">
+            <div class="hadits-header">
+                <span class="hadits-title">Keutamaan Menolong Sesama Muslim</span>
+                <span class="hadits-number">Hadis 26 / 1477</span>
+            </div>
+            <div class="arabic-text">
+                وَعَنْهُ قَالَ: قَالَ رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ: «المُسْلِمُ أَخُو المُسْلِمِ، لَا يَظْلِمُهُ وَلَا يَخْذُلُهُ وَلَا يَحْقِرُهُ... بِحَسْبِ امْرِئٍ مِنَ الشَّرِّ أَنْ يَحْقِرَ أَخَاهُ المُسْلِمَ، كُلُّ المُسْلِمِ عَلَى المُسْلِمِ حَرَامٌ: دَمُهُ، وَمَالُهُ، وَعِرْضُهُ».
+            </div>
+            <div class="translation-text">
+                Dari Abu Hurairah <i>radhiyallahu 'anhu</i> berkata: Rasulullah <i>shallallahu 'alaihi wa sallam</i> bersabda: "Seorang muslim adalah saudara bagi muslim yang lain, tidak boleh menzaliminya, tidak boleh membiarkannya (dalam kebinasaan), dan tidak boleh meremehkannya... Cukuplah seseorang dikatakan berbuat jahat jika ia meremehkan saudaranya sesama muslim. Setiap muslim atas muslim lainnya haram darahnya, hartanya, dan kehormatannya."
+            </div>
+            <div class="rawi-badge">
+                📖 Diriwayatkan oleh Muslim (HR. Muslim No. 2564)
+            </div>
+        </div>
+
+        <!-- Hadits 27 -->
+        <div class="hadits-card">
+            <div class="hadits-header">
+                <span class="hadits-title">Ancaman Menyakiti Orang Lain</span>
+                <span class="hadits-number">Hadis 27 / 1478</span>
+            </div>
+            <div class="arabic-text">
+                وَعَنْ أَبِي صِرْمَةَ رَضِيَ اللَّهُ عَنْهُ قَالَ: قَالَ رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ: «مَنْ ضَارَّ ضَارَّ اللَّهُ بِهِ، وَمَنْ شَاقَّ شَاقَّ اللَّهُ عَلَيْهِ».
+            </div>
+            <div class="translation-text">
+                Dari Abu Shirmah <i>radhiyallahu 'anhu</i> berkata: Rasulullah <i>shallallahu 'alaihi wa sallam</i> bersabda: "Barangsiapa yang membahayakan orang lain, maka Allah akan memberikan bahaya kepadanya, dan barangsiapa yang menyusahkan orang lain, maka Allah akan menyusahkannya."
+            </div>
+            <div class="rawi-badge">
+                📖 Diriwayatkan oleh Abu Dawud & Tirmidzi (HR. Abu Dawud No. 3635)
+            </div>
+        </div>
+
+        <!-- Hadits 28 -->
+        <div class="hadits-card">
+            <div class="hadits-header">
+                <span class="hadits-title">Perumpamaan Orang-Orang Beriman dalam Kasih Sayang</span>
+                <span class="hadits-number">Hadis 28 / 1479</span>
+            </div>
+            <div class="arabic-text">
+                وَعَنْ النُّعْمَانِ بْنِ بَشِيرٍ رَضِيَ اللَّهُ عَنْهُمَا قَالَ: قَالَ رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ: «مَثَلُ المُؤْمِنِينَ فِي تَوَادِّهِمْ، وَتَرَاحُمِهِمْ، وَتَعَاطُفِهِمْ مَثَلُ الجَسَدِ؛ إِذَا اشْتَكَى مِنْهُ عُضْوٌ تَدَاعَى لَهُ سَائِرُ الجَسَدِ بِالسَّهَرِ وَالحُمَّى».
+            </div>
+            <div class="translation-text">
+                Dari An-Nu'man bin Basyir <i>radhiyallahu 'anhuma</i> berkata: Rasulullah <i>shallallahu 'alaihi wa sallam</i> bersabda: "Perumpamaan orang-orang yang beriman dalam hal saling mencintai, mengasihi, dan menyayangi adalah seperti satu tubuh. Apabila ada salah satu anggota tubuh yang sakit, maka seluruh tubuh akan ikut merasakannya dengan tidak bisa tidur dan demam."
+            </div>
+            <div class="rawi-badge">
+                📖 Muttafaqun 'Alaih (HR. Bukhari No. 6011, Muslim No. 2586)
+            </div>
+        </div>
+
+        <!-- Hadits 29 -->
+        <div class="hadits-card">
+            <div class="hadits-header">
+                <span class="hadits-title">Perintah Menjaga Lisan dan Kehormatan</span>
+                <span class="hadits-number">Hadis 29 / 1480</span>
+            </div>
+            <div class="arabic-text">
+                وَعَنْ أَبِي مُوسَى الأَشْعَرِيِّ رَضِيَ اللَّهُ عَنْهُ قَالَ: قَالُوا يَا رَسُولَ اللَّهِ، أَيُّ الإِسْلَامِ أَفْضَلُ؟ قَالَ: «مَنْ سَلِمَ المَسْلِمُونَ مِنْ لِسَانِهِ وَيَدِهِ».
+            </div>
+            <div class="translation-text">
+                Dari Abu Musa Al-Asy'ari <i>radhiyallahu 'anhu</i> berkata: Para sahabat bertanya, "Wahai Rasulullah, Islam manakah yang paling utama?" Beliau menjawab: "Yaitu orang yang orang-orang muslim lainnya selamat dari gangguan lisan dan tangannya."
+            </div>
+            <div class="rawi-badge">
+                📖 Muttafaqun 'Alaih (HR. Bukhari No. 11, Muslim No. 42)
+            </div>
+        </div>
+
+        <!-- Hadits 30 -->
+        <div class="hadits-card">
+            <div class="hadits-header">
+                <span class="hadits-title">Keutamaan Menyambung Silaturahim Meskipun Dikhianati</span>
+                <span class="hadits-number">Hadis 30 / 1481</span>
+            </div>
+            <div class="arabic-text">
+                وَعَنْ أَبِي هُرَيْرَةَ رَضِيَ اللَّهُ عَنْهُ: أَنَّ رَجُلًا قَالَ: يَا رَسُولَ اللَّهِ، إِنَّ لِي قَرَابَةً أَصِلُهُمْ وَيَقْطَعُونِي، وَأُحْسِنُ إِلَيْهِمْ وَيُسِيئُونَ إِلَيَّ، وَأَحْلُمُ عَنْهُمْ وَيَجْهَلُونَ عَلَيَّ، فَقَالَ: «لَئِنْ كُنْتَ كَمَا قُلْتَ، فَكَأَنَّمَا تُسِفُّهُمُ المَلَّ، وَلَا يَزَالُ مَعَكَ مِنَ اللَّهِ ظَهِيرٌ عَلَيْهِمْ مَا دُمْتَ عَلَى ذَلِكَ».
+            </div>
+            <div class="translation-text">
+                Dari Abu Hurairah <i>radhiyallahu 'anhu</i>: Bahwasanya ada seorang laki-laki berkata, "Wahai Rasulullah, sesungguhnya aku memiliki kerabat, aku menyambung tali silaturahim kepada mereka namun mereka memutuskannya, aku berbuat baik kepada mereka namun mereka berbuat jahat kepadaku, dan aku bersabar atas mereka namun mereka berbuat bodoh kepadaku." Beliau bersabda: "Jika engkau benar seperti apa yang engkau katakan, maka seolah-olah engkau menyuapi mereka abu yang panas, dan senantiasa ada penolong dari Allah bersamamu untuk menghadapi mereka selama engkau tetap dalam keadaan demikian."
+            </div>
+            <div class="rawi-badge">
+                📖 Diriwayatkan oleh Muslim (HR. Muslim No. 2558)
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
